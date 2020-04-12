@@ -1,236 +1,230 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="jv-java" xml:lang="jv">
 <head>
- <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
- <meta content="utf-8" http-equiv="encoding">
- <meta http-equiv="X-UA-Compatible" content="text/html;" />
- <meta property="fb:admins" content="100002305543276"/>
- <title>Transliterasi Aksara Bugis -- Buginese Transliteration by bennylin</title>
- <link rel="stylesheet" href="specimen_stylesheet.css" type="text/css" charset="utf-8" />
- <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
- <script src="//bennylin.github.io/transliterasi/easytabs.js" type="text/javascript" charset="utf-8"></script>
- <script src="//jv.wikipedia.org/w/index.php?title=Panganggo:Bennylin/trans-bugis.js&amp;action=raw&amp;ctype=text/javascript" type="text/javascript" language="javascript" charset="utf-8"></script>
- <script src="//bennylin.github.io/transliterasi/transliterator-bugis.js" type="text/javascript" language="javascript" charset="utf-8"></script>
- <script src="//bennylin.github.io/transliterasi/script.js" type="text/javascript" language="javascript" charset="utf-8"></script>
- <script type="text/javascript" charset="utf-8">
-  $(document).ready(function() {
-   $('#container').easyTabs({defaultContent:1});
-  });
- </script>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta http-equiv="X-UA-Compatible" content="text/html;" />
+    <meta property="fb:admins" content="100002305543276" />
+    <title>Transliterasi Aksara Bugis -- Buginese Transliteration by bennylin</title>
+    <link rel="stylesheet" href="specimen_stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//bennylin.github.io/transliterasi/easytabs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//jv.wikipedia.org/w/index.php?title=Panganggo:Bennylin/trans-bugis.js&amp;action=raw&amp;ctype=text/javascript" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="//bennylin.github.io/transliterasi/transliterator-bugis.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="//bennylin.github.io/transliterasi/script.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $('#container').easyTabs({ defaultContent: 1 });
+        });
+    </script>
 </head>
 
-  <body onload="document.getElementById('inp_txt').focus();">
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '788715451208485',
-      xfbml      : true,
-      version    : 'v2.2'
-    });
-  };
+<body onload="document.getElementById('inp_txt').focus();">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '788715451208485',
+                xfbml: true,
+                version: 'v2.2'
+            });
+        };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<div id="container">
- <div id="header">Transliterasi Aksara Bugis</div>
- <ul class="tabs">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About &amp; Contact</a></li>
-  <li><a href="#unicode">Buginese Unicode Block</a></li>
-  <li><a href="#faq">FAQ</a></li>
-  <li><a href="#resources">Download</a></li>
- </ul>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="container">
+        <div id="header">Transliterasi Aksara Bugis</div>
+        <ul class="tabs">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About &amp; Contact</a></li>
+            <li><a href="#unicode">Buginese Unicode Block</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#resources">Download</a></li>
+        </ul>
 
- <div id="main_content">
-   <div id="home">
-    <div id="bd" role="main">
-      <h1>Cara termudah untuk menulis Aksara Bugis</h1>
-      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
-      <div id="transdiv" class="gb">
-        <h3>Pratayang <abbr title="Teks yang Anda ketik/kopipas akan muncul pratayangnya di sini."><span style="font-family:Arial; font-size:smaller">[?]</span></abbr></h3>
-        <div id="prev_label"></div>
-        <h3>Masukkan teks di sini, tekan Enter untuk memasukkan ke textbox utama. <abbr title="Dapat menerima input dalam bahasa Bugis maupun Indonesia"><span style="font-family:Arial; font-size:smaller">[?]</span></abbr></h3>
-        <p>"Transliterasi Aksara Bugis" adalah sebuah alat sederhana untuk mengetik aksara Bugis dengan keyboard biasa (QWERTY). Cukup ketikkan kata yang Anda inginkan, dan aksara Bugisnya akan langsung muncul.</p>
-        <p><small>Catatan: "e" menghasilkan taling, "x" menghasilkan pepet. <a href="https://github.com/bennylin/transliterasijawa/issues">Berikan masukan!</a></small></p>
-        <!--<p><small>*NB: Jika Anda melihat fon kotak-kotak, silakan unduh fon Bugis di sini: <a href="//google.com/get/noto">Noto Sans Buginese</a> sementara saya coba agar font bisa terunduh secara otomatis seperti Nulisa Aksara jawa.</small></p>-->
-        <textarea id="inp_txt" class="tb"></textarea><!--
-        <table width="100%" style="font-family:Arial"><tr><td style="width:50%">
-          <input type="radio" name="mode" value="ketik" checked="checked">Mode Ketik: 'e' = taling, 'x' = pepet <abbr title="Dalam mode ini, Anda bisa mengetik secara normal. Tombol 'e' digunakan untuk menuliskan taling, sementara tombol 'x' digunakan untuk menuliskan pepet"><small>[?]</small></abbr><br>
-          <input type="radio" name="mode" value="kopas">Mode Kopas: 'e' = pepet, 'è'/'é'  = taling <abbr title="Dalam mode ini, Anda bisa kopipas dari artikel yang menggunakan huruf 'e' beraksen (è/é), misalnya dari artikel Wikipedia bahasa Jawa"><small>[?]</small></abbr>
-        </td><td style="width:25%">
-          <input type="radio" name="murda" value="pakai">Mode Murda<br>
-          <input type="radio" name="murda" value="tidak" checked="checked">Mode <s>Murda</s>
-        </td><td style="width:25%">
-          <input type="radio" name="spasi" value="without">Tanpa spasi <abbr title="Dalam mode ini, teks akan diperlakukan tanpa ada spasi sama sekali, meskipun Anda menggunakan spasi. Teks tidak dapat dikonvert kembali dengan spasi."><small>[?]</small></abbr><br>
-          <input type="radio" name="spasi" value="with" checked="checked">Dengan spasi <abbr title="Dalam mode ini, setiap spasi diubah menjadi karakter khusus sehingga dapat ditransliterasi kembali ke Latin dengan spasi."><small>[?]</small></abbr>
-        </td></tr></table><!----><!--
-        <p style="font-family:Noto Sans Buginese;">Karakter khusus: ḍ ḍh ṇ ṣ ṭ ṭh ꧁ ꧂ ꧃ ꧄ ꧅ ꧆ ꧊ ꧏ<br></p><!---->
-      </div>
-      <div id="output" class="gb">
-        <h3>You can compose text here, for transliteration type in textbox above.</h3>
-        <form name="formText">
-           <input type="reset" value="reset" />
-         <textarea id="ta" class="main_ta" name="editSrc"></textarea>
-           <input onclick="transliterate(bugis2latn)" name="buttonConvert" type="button" value="bugis &gt; latin" />
-        </form>
-      </div>
+        <div id="main_content">
+            <div id="home">
+                <div id="bd" role="main">
+                    <h1>Cara termudah untuk menulis Aksara Bugis</h1>
+                    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+                    <div id="transdiv" class="gb">
+                        <h3>Pratayang <abbr title="Teks yang Anda ketik/kopipas akan muncul pratayangnya di sini."><span style="font-family:Arial; font-size:smaller">[?]</span></abbr></h3>
+                        <div id="prev_label"></div>
+                        <h3>Masukkan teks di sini, tekan Enter untuk memasukkan ke textbox utama. <abbr title="Dapat menerima input dalam bahasa Bugis maupun Indonesia"><span style="font-family:Arial; font-size:smaller">[?]</span></abbr></h3>
+                        <p>"Transliterasi Aksara Bugis" adalah sebuah alat sederhana untuk mengetik aksara Bugis dengan keyboard biasa (QWERTY). Cukup ketikkan kata yang Anda inginkan, dan aksara Bugisnya akan langsung muncul.</p>
+                        <p><small>Catatan: "e" menghasilkan taling, "x" menghasilkan pepet. <a href="https://github.com/bennylin/transliterasijawa/issues">Berikan masukan!</a></small></p>
+                        <!--<p><small>*NB: Jika Anda melihat fon kotak-kotak, silakan unduh fon Bugis di sini: <a href="//google.com/get/noto">Noto Sans Buginese</a> sementara saya coba agar font bisa terunduh secara otomatis seperti Nulisa Aksara jawa.</small></p>-->
+                        <textarea id="inp_txt" class="tb"></textarea>
+                        <!--
+                        <table width="100%" style="font-family:Arial"><tr><td style="width:50%">
+                          <input type="radio" name="mode" value="ketik" checked="checked">Mode Ketik: 'e' = taling, 'x' = pepet <abbr title="Dalam mode ini, Anda bisa mengetik secara normal. Tombol 'e' digunakan untuk menuliskan taling, sementara tombol 'x' digunakan untuk menuliskan pepet"><small>[?]</small></abbr><br>
+                          <input type="radio" name="mode" value="kopas">Mode Kopas: 'e' = pepet, 'è'/'é'  = taling <abbr title="Dalam mode ini, Anda bisa kopipas dari artikel yang menggunakan huruf 'e' beraksen (è/é), misalnya dari artikel Wikipedia bahasa Jawa"><small>[?]</small></abbr>
+                        </td><td style="width:25%">
+                          <input type="radio" name="murda" value="pakai">Mode Murda<br>
+                          <input type="radio" name="murda" value="tidak" checked="checked">Mode <s>Murda</s>
+                        </td><td style="width:25%">
+                          <input type="radio" name="spasi" value="without">Tanpa spasi <abbr title="Dalam mode ini, teks akan diperlakukan tanpa ada spasi sama sekali, meskipun Anda menggunakan spasi. Teks tidak dapat dikonvert kembali dengan spasi."><small>[?]</small></abbr><br>
+                          <input type="radio" name="spasi" value="with" checked="checked">Dengan spasi <abbr title="Dalam mode ini, setiap spasi diubah menjadi karakter khusus sehingga dapat ditransliterasi kembali ke Latin dengan spasi."><small>[?]</small></abbr>
+                        </td></tr></table><!---->
+                        <!--
+                        <p style="font-family:Noto Sans Buginese;">Karakter khusus: ḍ ḍh ṇ ṣ ṭ ṭh ꧁ ꧂ ꧃ ꧄ ꧅ ꧆ ꧊ ꧏ<br></p><!---->
+                    </div>
+                    <div id="output" class="gb">
+                        <h3>You can compose text here, for transliteration type in textbox above.</h3>
+                        <form name="formText">
+                            <input type="reset" value="reset" />
+                            <textarea id="ta" class="main_ta" name="editSrc"></textarea>
+                            <input onclick="transliterate(bugis2latn)" name="buttonConvert" type="button" value="bugis &gt; latin" />
+                        </form>
+                    </div>
 
-   <div class="section">
-    <div class="grid7 firstcol">
-<h2>Tes</h2>
-<p>Jika Anda bisa melihat aksara Bugis di bawah ini, berarti tidak ada masalah</p>
+                    <div class="section">
+                        <div class="grid7 firstcol">
+                            <h2>Tes</h2>
+                            <p>Jika Anda bisa melihat aksara Bugis di bawah ini, berarti tidak ada masalah</p>
 
-<p>
-<span style="font-family:Noto Sans Buginese">ᨀ 	ᨁ 	ᨂ 	ᨃ 	ᨄ 	ᨅ 	ᨆ 	ᨇ 	ᨈ 	ᨉ 	ᨊ 	ᨋ 	ᨌ 	ᨍ 	ᨎ 	ᨏ
-ᨐ 	ᨑ 	ᨒ 	ᨓ 	ᨔ 	ᨕ 	ᨖ 	◌ᨗ 	◌ᨘ 	 ᨙ◌ 	◌ᨚ 	◌ᨛ 			᨞ 	᨟ <br></span>
-     </p> </div>
+                            <p>
+                                <span style="font-family:Noto Sans Buginese">
+                                    ᨀ 	ᨁ 	ᨂ 	ᨃ 	ᨄ 	ᨅ 	ᨆ 	ᨇ 	ᨈ 	ᨉ 	ᨊ 	ᨋ 	ᨌ 	ᨍ 	ᨎ 	ᨏ
+                                    ᨐ 	ᨑ 	ᨒ 	ᨓ 	ᨔ 	ᨕ 	ᨖ 	◌ᨗ 	◌ᨘ 	 ᨙ◌ 	◌ᨚ 	◌ᨛ 			᨞ 	᨟ <br />
+                                </span>
+                            </p>
+                        </div>
 
-    <div class="grid5 sidebar">
-     <div class="box">
-      <h2>Apa Yang Baru?</h2>
-      <p>&nbsp;</p>
-      <p>2019-12:</p>
-      <p>* Transliterasi Aksara Bugis v1.0 diluncurkan</p>
-     </div>
+                        <div class="grid5 sidebar">
+                            <div class="box">
+                                <h2>Apa Yang Baru?</h2>
+                                <p>&nbsp;</p>
+                                <p>2019-12:</p>
+                                <p>* Transliterasi Aksara Bugis v1.0 diluncurkan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about">
+
+                <div class="section">
+
+                    <div class="grid12 firstcol">
+                        <h1><a href="#"><h1>Buginese Transliterator</h1></a></h1>
+                        <h2>Transliterasi Latin-Aksara Bugis, Aksara Bugis-Latin</h2>
+
+                        <p class="byline">By <a href="http://en.wikipedia.org/wiki/User:Bennylin">Bennylin</a></p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="grid8 firstcol">
+                        <h3>Tentang situs ini</h3>
+                        <p>"Transliterasi Aksara Bugis" adalah sebuah proyek untuk mempermudah penulisan Aksara Bugis. Selain itu program ini juga berfungsi untuk mentransliterasi teks dari Latin->Aksara Bugis serta sebaliknya. Proyek ini dimulai pada 2012 (Aksara Jawa), 2015 (Aksara Bali), dan transliterasi Aksara BUgis ini dimulai 1 Desember 2019.</p>
+
+                        <h3>Tentang penulis</h3>
+                        <p>Saya adalah seorang Wikipediawan dan Wiktionarian bahasa Indonesia, bahasa Jawa, dan masih banyak lagi. Cita-cita saya adalah melihat aksara Jawa dan aksara Nusantara lainnya digunakan secara luas oleh masyarakat.</p>
+                    </div>
+
+                    <div class="grid4 sidebar">
+
+                        <div class="box reverse">
+                            <p class="last">Questions can be addressed to: <a href="http://github.com/bennylin">my github page</a>.</p>
+                        </div>
+
+                        <p class="caption">Atau tinggalkan pesan di Facebook Comment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="unicode">
+                <div class="section">
+                    <div class="grid12 firstcol">
+
+                        <h1>Glyph Chart</h1>
+                        <p>Blok Unicode aksara Bugis terletak pada kode U+1A00–U+1A1F.</p>
+                        <div id="glyph_chart" style="font-family:Noto Sans Buginese">
+
+                            <div><p>&amp;#x1A00;<br /></p>&#x1A00;</div><!-- title="U+1A00: BUGINESE LETTER KA" -->
+                            <div><p>&amp;#x1A01;<br /></p>&#x1A01;</div><!-- title="U+1A01: BUGINESE LETTER GA" -->
+                            <div><p>&amp;#x1A02;<br /></p>&#x1A02;</div><!-- title="U+1A02: BUGINESE LETTER NGA" -->
+                            <div><p>&amp;#x1A03;<br /></p>&#x1A03;</div><!-- title="U+1A03: BUGINESE LETTER NGKA" -->
+                            <div><p>&amp;#x1A04;<br /></p>&#x1A04;</div><!-- title="U+1A04: BUGINESE LETTER PA" -->
+                            <div><p>&amp;#x1A05;<br /></p>&#x1A05;</div><!-- title="U+1A05: BUGINESE LETTER BA" -->
+                            <div><p>&amp;#x1A06;<br /></p>&#x1A06;</div><!-- title="U+1A06: BUGINESE LETTER MA" -->
+                            <div><p>&amp;#x1A07;<br /></p>&#x1A07;</div><!-- title="U+1A07: BUGINESE LETTER MPA" -->
+                            <div><p>&amp;#x1A08;<br /></p>&#x1A08;</div><!-- title="U+1A08: BUGINESE LETTER TA" -->
+                            <div><p>&amp;#x1A09;<br /></p>&#x1A09;</div><!-- title="U+1A09: BUGINESE LETTER DA" -->
+                            <div><p>&amp;#x1A0A;<br /></p>&#x1A0A;</div><!-- title="U+1A0A: BUGINESE LETTER NA" -->
+                            <div><p>&amp;#x1A0B;<br /></p>&#x1A0B;</div><!-- title="U+1A0B: BUGINESE LETTER NRA" -->
+                            <div><p>&amp;#x1A0C;<br /></p>&#x1A0C;</div><!-- title="U+1A0C: BUGINESE LETTER CA" -->
+                            <div><p>&amp;#x1A0D;<br /></p>&#x1A0D;</div><!-- title="U+1A0D: BUGINESE LETTER JA" -->
+                            <div><p>&amp;#x1A0E;<br /></p>&#x1A0E;</div><!-- title="U+1A0E: BUGINESE LETTER NYA" -->
+                            <div><p>&amp;#x1A0F;<br /></p>&#x1A0F;</div><!-- title="U+1A0F: BUGINESE LETTER NYCA" -->
+                            <div><p>&amp;#x1A10;<br /></p>&#x1A10;</div><!-- title="U+1A10: BUGINESE LETTER YA" -->
+                            <div><p>&amp;#x1A11;<br /></p>&#x1A11;</div><!-- title="U+1A11: BUGINESE LETTER RA" -->
+                            <div><p>&amp;#x1A12;<br /></p>&#x1A12;</div><!-- title="U+1A12: BUGINESE LETTER LA" -->
+                            <div><p>&amp;#x1A13;<br /></p>&#x1A13;</div><!-- title="U+1A13: BUGINESE LETTER VA" -->
+                            <div><p>&amp;#x1A14;<br /></p>&#x1A14;</div><!-- title="U+1A14: BUGINESE LETTER SA" -->
+                            <div><p>&amp;#x1A15;<br /></p>&#x1A15;</div><!-- title="U+1A15: BUGINESE LETTER A" -->
+                            <div><p>&amp;#x1A16;<br /></p>&#x1A16;</div><!-- title="U+1A16: BUGINESE LETTER HA" -->
+                            <div><p>&amp;#x1A17;<br /></p>&#x1A17;</div><!-- title="U+1A17: BUGINESE VOWEL SIGN I" -->
+                            <div><p>&amp;#x1A18;<br /></p>&#x1A18;</div><!-- title="U+1A18: BUGINESE VOWEL SIGN U" -->
+                            <div><p>&amp;#x1A19;<br /></p>&#x1A19;</div><!-- title="U+1A19: BUGINESE VOWEL SIGN E" -->
+                            <div><p>&amp;#x1A1A;<br /></p>&#x1A1A;</div><!-- title="U+1A1A: BUGINESE VOWEL SIGN O" -->
+                            <div><p>&amp;#x1A1B;<br /></p>&#x1A1B;</div><!-- title="U+1A1B: BUGINESE VOWEL SIGN AE" -->
+                            <div><p>&nbsp;</p></div><!-- Reserved -->
+                            <div><p>&nbsp;</p></div><!-- Reserved -->
+                            <div><p>&amp;#x1A1E;<br /></p>&#x1A1E;</div><!-- title="U+1A1E: BUGINESE PALLAWA" -->
+                            <div><p>&amp;#x1A1F;<br /></p>&#x1A1F;</div><!-- title="U+1A1F: BUGINESE END OF SECTION" -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="specs">
+            </div>
+
+            <div id="faq">
+                <div class="section">
+                    <div class="grid7 firstcol">
+                        <h1>Menampilkan Aksara Bugis</h1>
+
+                        <p>Situs "Transliterasi Aksara Bugis" ini menampilkan aksara Bugis menggunakan font <a href="//google.com/get/noto">Noto Sans Buginese</a>. Jika Anda belum memiliki font ini, tampilan aksara Bugis di situs ini mungkin tidak akan tertampil dengan benar.</p>
+
+                        <h2>Tes</h2>
+                        <p>Jika Anda bisa melihat aksara Bugis di bawah ini, berarti tidak ada masalah</p>
+
+                        <p>
+                            <span style="font-family:Noto Sans Buginese">
+                                ᨀ 	ᨁ 	ᨂ 	ᨃ 	ᨄ 	ᨅ 	ᨆ 	ᨇ 	ᨈ 	ᨉ 	ᨊ 	ᨋ 	ᨌ 	ᨍ 	ᨎ 	ᨏ
+                                ᨐ 	ᨑ 	ᨒ 	ᨓ 	ᨔ 	ᨕ 	ᨖ 	◌ᨗ 	◌ᨘ 	 ᨙ◌ 	◌ᨚ 	◌ᨛ 			᨞ 	᨟ <br />
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="grid5 sidebar">
+                        <div class="box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resources">
+                <h2>Download <a href="index.html">Transliterasi Aksara Bugis</a></h2>
+                <p>Untuk download, Anda cukup menyimpan halaman ini (Ctrl-S) di komputer Anda, dan Anda dapat membukanya kembali di browser Anda untuk dapat langsung menulis Aksara Bugis.<!--<a href="https://github.com/bennylin/transliterasijawa/zipball/master">Download <strong>ZIP File</strong></a><br>Atau, Anda bisa download dari Dropbox dengan mengeklik di <a href="https://www.dropbox.com/s/z7r74yw0i1zcq4h/Nulisa_v1.1.zip">sini</a>--></p>
+            </div>
+
+            <div class="fb-comments" data-href="http://bennylin.github.io/transliterasi/bugis.html" data-numposts="5" data-colorscheme="light"></div>
+        </div>
+        <div id="footer">
+            <p>&copy;2015 | <a href="http://facebook.com/bennylin.solo">Facebook</a> | <a href="http://twitter.com/bennylin">Twitter</a> | <a href="http://github.com/bennylin">Github</a></p>
+        </div>
     </div>
-   </div>
-
-
-    </div>
-  </div>
-
-   <div id="about">
-
-    <div class="section">
-
-     <div class="grid12 firstcol">
-      <h1><a href="#"><h1>Buginese Transliterator</h1></a></h1>
-      <h2>Transliterasi Latin-Aksara Bugis, Aksara Bugis-Latin</h2>
-
-      <p class="byline">By <a href="http://en.wikipedia.org/wiki/User:Bennylin">Bennylin</a></p>
-     </div>
-    </div>
-    <div class="section">
-     <div class="grid8 firstcol">
-     <h3>Tentang situs ini</h3>
-      <p>"Transliterasi Aksara Bugis" adalah sebuah proyek untuk mempermudah penulisan Aksara Bugis. Selain itu program ini juga berfungsi untuk mentransliterasi teks dari Latin->Aksara Bugis serta sebaliknya. Proyek ini dimulai pada 2012 (Aksara Jawa), 2015 (Aksara Bali), dan transliterasi Aksara BUgis ini dimulai 1 Desember 2019.</p>
-
-     <h3>Tentang penulis</h3>
-      <p>Saya adalah seorang Wikipediawan dan Wiktionarian bahasa Indonesia, bahasa Jawa, dan masih banyak lagi. Cita-cita saya adalah melihat aksara Jawa dan aksara Nusantara lainnya digunakan secara luas oleh masyarakat.</p>
-
-     </div>
-
-     <div class="grid4 sidebar">
-
-      <div class="box reverse">
-       <p class="last">Questions can be addressed to: <a href="http://github.com/bennylin">my github page</a>.</p>
-      </div>
-
-      <p class="caption">Atau tinggalkan pesan di Facebook Comment.</p>
-
-     </div>
-    </div>
-
-   </div>
-
-  <div id="unicode">
-   <div class="section">
-    <div class="grid12 firstcol">
-
-    <h1>Glyph Chart</h1>
-    <p>Blok Unicode aksara Bugis terletak pada kode U+1A00–U+1A1F.</p>
-    <div id="glyph_chart" style="font-family:Noto Sans Buginese">
-
-<div><p>&amp;#x1A00;<br></p>&#x1A00;</div><!-- title="U+1A00: BUGINESE LETTER KA" -->
-<div><p>&amp;#x1A01;<br></p>&#x1A01;</div><!-- title="U+1A01: BUGINESE LETTER GA" -->
-<div><p>&amp;#x1A02;<br></p>&#x1A02;</div><!-- title="U+1A02: BUGINESE LETTER NGA" -->
-<div><p>&amp;#x1A03;<br></p>&#x1A03;</div><!-- title="U+1A03: BUGINESE LETTER NGKA" -->
-<div><p>&amp;#x1A04;<br></p>&#x1A04;</div><!-- title="U+1A04: BUGINESE LETTER PA" -->
-<div><p>&amp;#x1A05;<br></p>&#x1A05;</div><!-- title="U+1A05: BUGINESE LETTER BA" -->
-<div><p>&amp;#x1A06;<br></p>&#x1A06;</div><!-- title="U+1A06: BUGINESE LETTER MA" -->
-<div><p>&amp;#x1A07;<br></p>&#x1A07;</div><!-- title="U+1A07: BUGINESE LETTER MPA" -->
-<div><p>&amp;#x1A08;<br></p>&#x1A08;</div><!-- title="U+1A08: BUGINESE LETTER TA" -->
-<div><p>&amp;#x1A09;<br></p>&#x1A09;</div><!-- title="U+1A09: BUGINESE LETTER DA" -->
-<div><p>&amp;#x1A0A;<br></p>&#x1A0A;</div><!-- title="U+1A0A: BUGINESE LETTER NA" -->
-<div><p>&amp;#x1A0B;<br></p>&#x1A0B;</div><!-- title="U+1A0B: BUGINESE LETTER NRA" -->
-<div><p>&amp;#x1A0C;<br></p>&#x1A0C;</div><!-- title="U+1A0C: BUGINESE LETTER CA" -->
-<div><p>&amp;#x1A0D;<br></p>&#x1A0D;</div><!-- title="U+1A0D: BUGINESE LETTER JA" -->
-<div><p>&amp;#x1A0E;<br></p>&#x1A0E;</div><!-- title="U+1A0E: BUGINESE LETTER NYA" -->
-<div><p>&amp;#x1A0F;<br></p>&#x1A0F;</div><!-- title="U+1A0F: BUGINESE LETTER NYCA" -->
-<div><p>&amp;#x1A10;<br></p>&#x1A10;</div><!-- title="U+1A10: BUGINESE LETTER YA" -->
-<div><p>&amp;#x1A11;<br></p>&#x1A11;</div><!-- title="U+1A11: BUGINESE LETTER RA" -->
-<div><p>&amp;#x1A12;<br></p>&#x1A12;</div><!-- title="U+1A12: BUGINESE LETTER LA" -->
-<div><p>&amp;#x1A13;<br></p>&#x1A13;</div><!-- title="U+1A13: BUGINESE LETTER VA" -->
-<div><p>&amp;#x1A14;<br></p>&#x1A14;</div><!-- title="U+1A14: BUGINESE LETTER SA" -->
-<div><p>&amp;#x1A15;<br></p>&#x1A15;</div><!-- title="U+1A15: BUGINESE LETTER A" -->
-<div><p>&amp;#x1A16;<br></p>&#x1A16;</div><!-- title="U+1A16: BUGINESE LETTER HA" -->
-<div><p>&amp;#x1A17;<br></p>&#x1A17;</div><!-- title="U+1A17: BUGINESE VOWEL SIGN I" -->
-<div><p>&amp;#x1A18;<br></p>&#x1A18;</div><!-- title="U+1A18: BUGINESE VOWEL SIGN U" -->
-<div><p>&amp;#x1A19;<br></p>&#x1A19;</div><!-- title="U+1A19: BUGINESE VOWEL SIGN E" -->
-<div><p>&amp;#x1A1A;<br></p>&#x1A1A;</div><!-- title="U+1A1A: BUGINESE VOWEL SIGN O" -->
-<div><p>&amp;#x1A1B;<br></p>&#x1A1B;</div><!-- title="U+1A1B: BUGINESE VOWEL SIGN AE" -->
-<div><p>&nbsp;</div><!-- Reserved -->
-<div><p>&nbsp;</div><!-- Reserved -->
-<div><p>&amp;#x1A1E;<br></p>&#x1A1E;</div><!-- title="U+1A1E: BUGINESE PALLAWA" -->
-<div><p>&amp;#x1A1F;<br></p>&#x1A1F;</div><!-- title="U+1A1F: BUGINESE END OF SECTION" -->
-
-    </div>
-    </div>
-
-   </div>
-  </div>
-
-  <div id="specs">
-
-  </div>
-
-  <div id="faq">
-   <div class="section">
-    <div class="grid7 firstcol">
-     <h1>Menampilkan Aksara Bugis</h1>
-
-     <p>Situs "Transliterasi Aksara Bugis" ini menampilkan aksara Bugis menggunakan font <a href="//google.com/get/noto">Noto Sans Buginese</a>. Jika Anda belum memiliki font ini, tampilan aksara Bugis di situs ini mungkin tidak akan tertampil dengan benar.</p>
-
-
-<h2>Tes</h2>
-<p>Jika Anda bisa melihat aksara Bugis di bawah ini, berarti tidak ada masalah</p>
-
-
-
-<p>
-<span style="font-family:Noto Sans Buginese">ᨀ 	ᨁ 	ᨂ 	ᨃ 	ᨄ 	ᨅ 	ᨆ 	ᨇ 	ᨈ 	ᨉ 	ᨊ 	ᨋ 	ᨌ 	ᨍ 	ᨎ 	ᨏ
-ᨐ 	ᨑ 	ᨒ 	ᨓ 	ᨔ 	ᨕ 	ᨖ 	◌ᨗ 	◌ᨘ 	 ᨙ◌ 	◌ᨚ 	◌ᨛ 			᨞ 	᨟ <br></span>
-     </p>
-    </div>
-
-    <div class="grid5 sidebar">
-     <div class="box">
-     </div>
-    </div>
-   </div>
-
-  </div>
-
-  <div id="resources">
-      <h2>Download <a href="index.html">Transliterasi Aksara Bugis</a></h2>
-      <p>Untuk download, Anda cukup menyimpan halaman ini (Ctrl-S) di komputer Anda, dan Anda dapat membukanya kembali di browser Anda untuk dapat langsung menulis Aksara Bugis.<!--<a href="https://github.com/bennylin/transliterasijawa/zipball/master">Download <strong>ZIP File</strong></a><br>Atau, Anda bisa download dari Dropbox dengan mengeklik di <a href="https://www.dropbox.com/s/z7r74yw0i1zcq4h/Nulisa_v1.1.zip">sini</a>--></p>
-  </div>
-
-<div class="fb-comments" data-href="http://bennylin.github.io/transliterasi/bugis.html" data-numposts="5" data-colorscheme="light"></div>
-
- </div>
- <div id="footer">
-  <p>&copy;2015 | <a href="http://facebook.com/bennylin.solo">Facebook</a> | <a href="http://twitter.com/bennylin">Twitter</a> | <a href="http://github.com/bennylin">Github</a></p>
- </div>
-</div>
 </body>
 </html>
