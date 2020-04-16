@@ -1,0 +1,815 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="jv-java" xml:lang="jv">
+<head>
+ <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+ <meta content="utf-8" http-equiv="encoding">
+ <meta http-equiv="X-UA-Compatible" content="text/html;" />
+ <meta property="fb:admins" content="100002305543276"/>
+ <title>Nulisa Aksara Jawa -- Javanese Transliteration by bennylin</title>
+ <link rel="stylesheet" href="css/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+ <link rel="stylesheet" href="css/stylesheet-jawa.css" type="text/css" charset="utf-8" />
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="//bennylin.github.io/transliterasi/js/easytabs.js" typegerick="text/javascript" charset="utf-8"></script>
+ <script src="//jv.wikipedia.org/w/index.php?title=Panganggo:Bennylin/trans.js&amp;action=raw&amp;ctype=text/javascript" type="text/javascript" language="javascript" charset="utf-8"></script>
+ <script src="//bennylin.github.io/transliterasi/js/transliterator-jawa.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+ <script src="//bennylin.github.io/transliterasi/js/script.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+ <script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+   $('#container').easyTabs({defaultContent:1});
+  });
+ </script>
+</head>
+
+  <body onload="document.getElementById('inp_txt').focus();">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '788715451208485',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="container">
+ <div id="header">Nulisa Aksara Jawa</div>
+ <div id="menu">
+ <ul class="tabs">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About &amp; Contact</a></li>
+  <li><a href="#unicode">Javanese Unicode Block</a></li>
+  <li><a href="#resources">Download & Android</a></li>
+  <li><a href="#aksara">Font Aksara Jawa</a></li>
+  <li><a href="#ansi">Font Hanacaraka (ANSI)</a></li>
+ </ul>
+ </div>
+
+ <div id="main_content">
+   <div id="home">
+    <div id="bd" role="main">
+      <h1>Cara termudah untuk menulis Aksara Jawa</h1>
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+      <div id="transdiv" class="gb">
+        <h3 style="font-family:Arial">Pratayang <abbr title="Teks yang Anda ketik/kopipas akan muncul pratayangnya di sini.">[?]</abbr></h3>
+        <div id="prev_label"></div>
+        <h3 style="font-family:Arial">Masukkan teks di sini, tekan Enter untuk memasukkan ke textbox utama. <abbr title="Dapat menerima input dalam bahasa Jawa maupun Indonesia"><span style="font-family:Arial; font-size:smaller">[?]</span></abbr></h3>
+        <p>"Nulisa Aksara Jawa" adalah sebuah alat sederhana untuk mengetik aksara Jawa dengan keyboard biasa (QWERTY). Cukup ketikkan kata yang Anda inginkan, dan aksara Jawanya akan langsung muncul.</p>
+        <p><small>Catatan: "e" menghasilkan taling, "x" menghasilkan pepet. <a href="http://jv.wikipedia.org/wiki/Dhiskusi_Panganggo:Bennylin">Berikan masukan!</a></small></p>
+        <textarea id="inp_txt" class="tb"></textarea>
+        <table width="100%" style="font-family:Arial"><tr><td style="width:50%">
+          <input type="radio" name="mode" value="ketik" checked="checked">Mode Ketik: 'e' = taling, 'x' = pepet <abbr title="Dalam mode ini, Anda bisa mengetik secara normal. Tombol 'e' digunakan untuk menuliskan taling, sementara tombol 'x' digunakan untuk menuliskan pepet"><small>[?]</small></abbr><br>
+          <input type="radio" name="mode" value="kopas">Mode Kopas: 'e' = pepet, 'è'/'é'  = taling <abbr title="Dalam mode ini, Anda bisa kopipas dari artikel yang menggunakan huruf 'e' beraksen (è/é), misalnya dari artikel Wikipedia bahasa Jawa. Anda juga bisa menggunakan mode ini untuk mengetik kata-kata dalam bahasa Indonesia, misalnya, karena mayoritas huruf 'e' dalam bahasa Indonesia (terutama imbuhan), adalah pepet"><small>[?]</small></abbr>
+        </td><td style="width:25%">
+          <input type="radio" name="murda" value="pakai">Mode Murda<br>
+          <input type="radio" name="murda" value="tidak" checked="checked">Mode <s>Murda</s>
+        </td><td style="width:25%">
+          <input type="radio" name="spasi" value="without">Tanpa spasi <abbr title="Dalam mode ini, teks akan diperlakukan tanpa ada spasi sama sekali, meskipun Anda menggunakan spasi. Teks tidak dapat dikonvert kembali dengan spasi."><small>[?]</small></abbr><br>
+          <input type="radio" name="spasi" value="with" checked="checked">Dengan spasi <abbr title="Dalam mode ini, setiap spasi diubah menjadi karakter khusus sehingga dapat ditransliterasi kembali ke Latin dengan spasi."><small>[?]</small></abbr>
+        </td></tr></table><!---->
+        <p>Karakter khusus: ḍ ḍh ṇ ṣ ṭ ṭh <span style="font-family:Noto Sans Javanese, Tuladha Jejeg;">꧁ ꧂ ꧃ ꧄ ꧅ ꧆ ꧊ ꧏ ꦎꦴꦀ (Om/Oṃ/ॐ)</span><br></p>
+      </div>
+      <div id="output" class="gb">
+        <p><strong>You can compose text here, for transliteration type in textbox above.</strong></h3>
+        <form name="formText">
+           <input type="reset" value="reset" />
+         <textarea id="ta" class="main_ta" name="editSrc"></textarea>
+           <input onclick="transliterate(java2latn)" name="buttonConvert" type="button" value="jawa &gt; latin" />
+        </form>
+      </div>
+
+   <div class="section">
+    <div class="grid7 firstcol"><!--
+     <h1>Menampilkan Aksara Jawa</h1>
+
+     <p>Situs "Nulisa" menampilkan aksara Jawa menggunakan font <a href="//sites.google.com/site/jawaunicode/">Tuladha Jejeg</a>. Jika Anda belum memiliki font ini, tampilan aksara Jawa di situs ini mungkin tidak akan tertampil dengan benar. Untuk dapat menampilkan dengan benar, Anda memerlukan tiga "F": Font, Firefox, dan Fitur Graphite:</p>
+
+     <h2>1. Font</h2>
+     <p>(Khusus untuk situs ini) Anda tidak perlu mengunduh font apa pun untuk dapat membaca aksara Jawa di situs ini. Oleh sebab itu, Anda dapat menggunakan komputer mana pun (meskipun komputer tersebut tidak memiliki font aksara Jawa), dan aksara Jawa sudah akan tertampil. Jika Anda menggunakannya untuk keperluan selain situs ini, unduh (download) font Tuladha Jejeg di situs https://sites.google.com/site/jawaunicode/unduh, lalu pasang (install) font tersebut seperti memasang font biasa.
+</p>
+
+     <h2>2. Firefox</h2>
+     <p>Anda perlu menggunakan peramban web (browser) <a href="http://getfirefox.com/">Firefox</a> atau yang semacamnya, misalnya <a href="http://palemoon.org/">Palemoon</a>. Pastikan Anda menggunakan versi yang paling mutakhir (versi 11 ke atas). Karena alasan teknis, peramban Chrome, Internet Explorer (IE), Opera, Safari, dan peramban lain selain Firefox tidak dapat menampilkan aksara Jawa dengan benar. Kami mohon maaf atas ketidaknyamanan ini.
+</p>
+
+     <h2>3. (PENTING) Fitur graphite</h2>
+     <p>Nyalakan Graphite rendering di Firefox Anda. Tanpa fitur ini, tampilan aksara Jawanya akan kacau. Ikuti langkah-langkah berikut<a href="https://sites.google.com/site/jawaunicode/home/firefox_graphite"><sup>1</sup></a>
+<ol style="padding-left:40px;">
+<li>Ketik about:config di address bar. Tekan [Enter].
+</li><li>Selanjutnya muncul halaman peringatan bahwa kesalahan mengganti setting di halaman berikutnya bisa mengganggu stabilitas, keamanan, dan performa Firefox. Tekan tombol "<b>I'll be careful, I promise!</b>"
+</li><li>Di halaman berikutnya, di kolom <b>Preference Name</b>, carilah <span style="font-family:monospace">gfx.font_rendering.graphite.enabled</span>. Anda juga bisa memanfaatkan Search untuk membantu menemukannya dengan cara mengetikkan kata "graphite" di kotak Search.
+</li><li>Klik ganda <span style="font-family:monospace">gfx.font_rendering.graphite.enabled</span> untuk mengganti value-nya dari false menjadi true. Teks di barisnya akan menjadi tebal. <u>Jangan mengganti setting-setting lain di halaman ini kecuali Anda tahu fungsi dan tujuannya.</u>
+</li><li>Tutup tab <span style="font-family:monospace">about:config</span>. Dukungan rendering fonta Graphite sudah menyala dan aktif.</a>
+</li></ol>
+-->
+<h2>Tes</h2>
+<p>Jika Anda bisa melihat aksara Jawa di bawah ini, berarti tidak ada masalah</p>
+
+<p>Urutan Latin<br>
+<span style="font-family:Noto Sans Javanese, Tuladha Jejeg">ꦧ꧀ ꦕ꧀ ꦢ꧀ ꦝ꧀  ꦥ꦳꧀ ꦒ꧀ ꦲ꧀ ꦗ꧀ ꦏ꧀ ꦭ꧀ ꦩ꧀ ꦤ꧀ ꦔ꧀ ꦚ꧀ ꦥ꧀ ꦫ꧀ ꦱ꧀ ꦠ꧀ ꦛ꧀ ꦥ꦳꧀ ꦮ꧀ ꦏ꧀ ꦪ꧀ ꦗ꦳꧀<br></span>
+<span style="font-family:Noto Sans Javanese, Tuladha Jejeg">◌꧀ꦧ&nbsp; ◌꧀ꦕ&nbsp; ◌꧀ꦢ&nbsp; ◌꧀ꦝ&nbsp; ◌꧀ꦥ꦳&nbsp; ◌꧀ꦒ&nbsp; ◌꧀ꦲ&nbsp; ◌꧀ꦗ&nbsp; ◌꧀ꦏ&nbsp; ◌꧀ꦭ&nbsp; ◌꧀ꦩ&nbsp; ◌꧀ꦤ&nbsp; ◌꧀ꦔ&nbsp; ◌꧀ꦚ&nbsp; ◌꧀ꦥ&nbsp; ◌꧀ꦫ&nbsp; ◌꧀ꦱ&nbsp; ◌꧀ꦠ&nbsp; ◌꧀ꦛ&nbsp; ◌꧀ꦥ꦳&nbsp; ◌꧀ꦮ&nbsp; ◌꧀ꦪ&nbsp; ◌꧀ꦗ꦳<br></span>
+b &nbsp;&nbsp;&nbsp;c &nbsp;&nbsp;&nbsp;d &nbsp;&nbsp;&nbsp;dh &nbsp;&nbsp;&nbsp;f &nbsp;&nbsp;&nbsp;g &nbsp;&nbsp;&nbsp;h &nbsp;&nbsp;&nbsp;j &nbsp;&nbsp;&nbsp;k &nbsp;&nbsp;&nbsp;l &nbsp;&nbsp;&nbsp;m &nbsp;&nbsp;&nbsp;n &nbsp;&nbsp;&nbsp;ng &nbsp;&nbsp;&nbsp;ny &nbsp;&nbsp;&nbsp;p &nbsp;&nbsp;&nbsp;r &nbsp;&nbsp;&nbsp;s &nbsp;&nbsp;&nbsp;t &nbsp;&nbsp;&nbsp;th &nbsp;&nbsp;&nbsp;v &nbsp;&nbsp;&nbsp;w &nbsp;&nbsp;&nbsp;y &nbsp;&nbsp;&nbsp;z</p>
+
+<p>Urutan Hanacaraka<br>
+<span style="font-family:Noto Sans Javanese, Tuladha Jejeg">ꦲꦤꦕꦫꦏ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ꦢꦠꦱꦮꦭ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ꦥꦝꦗꦪꦚ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ꦩꦒꦧꦛꦔ</span><br>
+<span style="font-family:Noto Sans Javanese, Tuladha Jejeg">◌꧀ꦲ&nbsp;&nbsp;◌꧀ꦤ&nbsp;&nbsp;◌꧀ꦕ&nbsp;&nbsp;◌꧀ꦫ&nbsp;&nbsp;◌꧀ꦏ&nbsp;&nbsp;◌꧀ꦢ&nbsp;&nbsp;◌꧀ꦠ&nbsp;&nbsp;◌꧀ꦱ&nbsp;&nbsp;◌꧀ꦮ&nbsp;&nbsp;◌꧀ꦭ&nbsp;&nbsp;◌꧀ꦥ&nbsp;&nbsp;◌꧀ꦝ&nbsp;&nbsp;◌꧀ꦗ&nbsp;&nbsp;◌꧀ꦪ&nbsp;&nbsp;◌꧀ꦚ&nbsp;&nbsp;◌꧀ꦩ&nbsp;&nbsp;◌꧀ꦒ&nbsp;&nbsp;◌꧀ꦧ&nbsp;&nbsp;◌꧀ꦛ&nbsp;&nbsp;◌꧀ꦔ</span><br>
+ha na ca ra ka &nbsp;&nbsp;&nbsp;da ta sa wa la &nbsp;&nbsp;&nbsp;pa dha ja ya nya &nbsp;&nbsp;&nbsp;ma ga ba tha nga</p>
+    </div>
+
+    <div class="grid5 sidebar">
+     <div class="box">
+      <h2>Pertanyaan Umum</h2>
+      <h4>Kok banyak pangkon dipakai di tengah kalimat?</h4>
+	     <p>Supaya pangkon tidak muncul di tengah-tengah kalimat, klik opsi "Tanpa spasi"</p>
+      <h4>Kok tidak bisa dikopipas/diprint lewat Word?</h4>
+	     <p>Microsoft Word-nya (Microsoft Office) yang belum mendukung. Saat ini program sejenis yang sudah mendukung baru Open Office dan Libre Office (alternatif gratis untuk MS Office).</p>
+      <h2>Apa Yang Baru?</h2>
+	     
+      <p>2019-12:</p>
+	     <p>* <a href="https://bennylin.github.io/transliterasi/bugis.html">Konversi Aksara Latin-Bugis</a> (Bugis Transliterator) v 0.1</p>
+	     <p>* Buat halaman khusus untuk <a href="https://bennylin.github.io/transliterasi/">daftar transliterator aksara Nusantara</a>, mengingat sudah ada Aksara Jawa, Bali, Bugis, dan Sunda (eksternal).</p>
+      <p>2018-06:</p>
+	     <p>* <a href="http://www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</p>
+	     <p>* Bug: "kinclong" - terima kasih untuk Subarno Wijatmadja</p>
+	     <p>* Pertanyaan Umum (FAQ) ditambahkan</p>
+      <p>2016-06:</p>
+      <p>* Versi 1.3! Akhirnya ada waktu untuk memperbaiki beberapa hal yang sudah lama ingin diubah, misalnya huruf vokal yang berjejer (vokal rangkap), hampir semua kombinasi vokal (a-e-i-o-u-x-ai) rangkap dua sudah diakomodir. (Sangat membantu terutama dalam penulisan bahasa Indonesia)</p>
+      <p>* Diftong 'ai' dan 'au' juga sudah diakomodir. Sekarang Anda dapat menulis kata-kata seperti: kau, menuai, membuai, sesuai, kiai, beliau, dll.</p>
+      <p><b><a href="http://bennylin.github.io/transliterasi/bali.html">Transliterator Aksara Bali</a> v 1.0</b> telah diluncurkan. Silakan dicoba!</p>
+      <p>Seperti biasa, kalau Anda menemui kesalahan, sampaikan lewat kotak komentar atau halaman pembicaraan saya di Wikipedia, atau di mana pun Anda bisa menemukan saya :). Salam.</p>
+      <p>&nbsp;</p><!--
+      <p>2015-08:</p>
+        <section class="box feature">
+	  <img alt="Keyboard Nulisa" src="https://lh3.googleusercontent.com/ERsMxk9GHUlzWah5sLQF-b88P7P6MVT4gdAxk6EOgkEIdXdabRp2KEVdbWJ2ykN-sCDa=w250" style="display: block; margin-left: auto; margin-right: auto;" class="8u"><br>
+          <center></center><a href="https://play.google.com/store/apps/details?id=com.benny.jawa.aksara.keyboard"><img src="https://www.gstatic.com/android/market_images/web/play_logo_x2.png" width="200px"></a></center>
+	</section>
+      <p>&nbsp;</p>
+      <h2>Tahukah Anda?</h2>
+      <p>&nbsp;</p>
+      <h3>Nulisa versi Windows</h3>
+      <p>"Nulisa" kini tersedia untuk desktop, menggunakan Google IME. Berhubung masih dalam tahap beta, jika ingin mencoba, silakan hubungi saya (tinggalkan komentar di situs ini, atau lewat japri)</p>
+      <p>&nbsp;</p>
+      <h3>Nulisa versi Android</h3>
+      <p><s>"Nulisa" kini juga sedang dikembangkan untuk versi Android. Masih dalam tahap beta juga. Jika berminat menjadi tester, silakan hubungi saya.</s> Sudah dapat diunduh di <a href="https://play.google.com/store/apps/details?id=com.benny.jawa.aksara.keyboard">Play Store</a></p>
+      <p>&nbsp;</p><!--
+      <p>2015-04:</p>
+      <p>* Known bug: (fixed 2015-05)</p>
+      <p><ol>
+       <li><s>njl, njr: 
+anjlog
+anjlêg
+anjrah
+anjrak
+anjrit
+anjrum
+anjrêg
+ganjling
+ganjras
+ganjrêt
+gênjlong
+gênjlung
+gênjlèng
+gênjrèng
+gênjrèt</s></li>
+<li><s>rc:
+arca
+arcamana
+arcana
+arcapada
+bêrcak
+bêrci
+bêrcoh
+bêrcuh
+barci
+burcèt
+caya-murcaya
+corcoran
+cêrcèt
+cêrcêb
+cêrcêlan
+durcara</s></li>
+<li><s>hg:
+dahgene</s></li>
+<li><s>'awalan h':
+hlam-hlam
+hrêdaya
+hwab
+hwan</s></li>
+</li><s>ing-[aeiou]:
+ingah
+ingah-ingih
+ingak
+ingak-ingik
+ingak-inguk
+ingan	
+ingar-ingêr	
+ingas	
+ingi	
+ingih-ingih	
+ingip	
+ingiring	
+ingis	
+inglar	
+inglêp	
+ingon	
+ingong	
+ingu	
+inguk	
+ingêbèhi	
+ingêl	
+ingêr	
+ingêt</s></li>
+<li><s>ngw:
+ingwang	
+katèngwang	
+kawangwang</s></li>
+</li>
+<li><s>hw:
+ahwaya	
+dahwèn	
+dhwa	
+jihwa	
+kahwa	
+Tyonghwa
+dhwa	
+dhwani	
+dhwasta	
+dhyaksa	
+dhyam</s></li>
+<li><s>nggr:
+panggrahita</s></li>
+<li><s>rw:
+rwa
+rwi
+rwab</s></li></ol></p>-->
+      <!--<h2>Troubleshooting<br />Font-Face Problems</h2>
+      <p>Having trouble getting your webfonts to load in your new website? Here are some tips to sort out what might be the problem.</p>
+
+      <h3>Fonts not showing in any browser</h3>
+
+      <p>This sounds like you need to work on the plumbing. You either did not upload the fonts to the correct directory, or you did not link the fonts properly in the CSS. If you've confirmed that all this is correct and you still have a problem, take a look at your .htaccess file and see if requests are getting intercepted.</p>
+
+      <h3>Fonts not loading in iPhone or iPad</h3>
+
+      <p>The most common problem here is that you are serving the fonts from an IIS server. IIS refuses to serve files that have unknown MIME types. If that is the case, you must set the MIME type for SVG to "image/svg+xml" in the server settings. Follow these instructions from Microsoft if you need help.</p>
+
+      <h3>Fonts not loading in Firefox</h3>
+
+      <p>The primary reason for this failure? You are still using a version Firefox older than 3.5. So upgrade already! If that isn't it, then you are very likely serving fonts from a different domain. Firefox requires that all font assets be served from the same domain. Lastly it is possible that you need to add WOFF to your list of MIME types (if you are serving via IIS.)</p>
+
+      <h3>Fonts not loading in IE</h3>
+
+      <p>Are you looking at Internet Explorer on an actual Windows machine or are you cheating by using a service like Adobe BrowserLab? Many of these screenshot services do not render @font-face for IE. Best to test it on a real machine.</p>
+
+      <h3>Fonts not loading in IE9</h3>
+
+      <p>IE9, like Firefox, requires that fonts be served from the same domain as the website. Make sure that is the case.</p>-->
+     </div>
+    </div>
+   </div>
+      <!--<div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-width="370" data-num-posts="10"></div>-->
+    </div>
+  </div>
+   <div id="about">
+    <div class="section">
+     <div class="grid12 firstcol">
+      <h1><a href="#">Javanese Transliterator</a></h1>
+      <h2>Transliterasi Latin-Carakan, Carakan-Latin</h2>
+      <p class="byline">By <a href="http://jv.wikipedia.org/wiki/Panganggo:Bennylin">Bennylin</a></p>
+     </div>
+    </div>
+    <div class="section">
+     <div class="grid8 firstcol">
+     <h3>Tentang situs ini</h3>
+      <p>"Nulisa" adalah sebuah proyek untuk mempermudah penulisan Aksara Jawa. Selain itu "Nulisa" juga berfungsi untuk mentransliterasi teks dari Latin->Carakan serta sebaliknya. Proyek ini dimulai pada 2012, dan situs ini dibuat pada 6 April 2013.</p>
+     <h3>Tentang penulis</h3>
+      <p>Saya adalah seorang Wikipediawan dan Wiktionarian bahasa Indonesia, bahasa Jawa, dan masih banyak lagi. Cita-cita saya adalah melihat aksara Jawa digunakan secara luas oleh masyarakat, dan terkhusus di dalam Wikipedia/Wiktionary bahasa Jawa.</p>
+     <h3>Kliping</h3>
+      <p><i>Masih dikumpulkan</i></p>
+     </div>
+     <div class="grid4 sidebar">
+      <div class="box reverse">
+       <p class="last">Questions can be addressed to: <a href="http://facebook.com/jvwiki">Facebook</a>, <a href="http://twitter.com/jvwiki">Twitter</a>, or <a href="http://github.com/bennylin">contact me directly</a>.</p>
+      </div>
+      <p class="caption">Atau tinggalkan pesan di Facebook Comment.</p>
+     </div>
+    </div>
+   </div>
+  <div id="unicode">
+   <div class="section">
+    <div class="grid12 firstcol">
+      <h1><a href="#">Glyph Chart</a></h1>
+    <p>Blok Unicode aksara Jawa terletak pada kode U+A980–U+A9DF. Sel abu-abu menunjukkan titik kode yang belum terpakai.</p>
+    <div id="glyph_chart" style="font-family:Noto Sans Javanese, Tuladha Jejeg">
+<div><p>&amp;#xa980;<br></p>&#xa980;</div>
+<div><p>&amp;#xa981;<br>-ng</p>&#xa981;</div>
+<div><p>&amp;#xa982;<br>-r</p>&#xa982;</div>
+<div><p>&amp;#xa983;<br>-h</p>&#xa983;</div>
+<div><p>&amp;#xa984;<br>A</p>&#xa984;</div>
+<div><p>&amp;#xa985;<br>I<!--I Kawi--></p>&#xa985;</div>
+<div><p>&amp;#xa986;<br>I</p>&#xa986;</div>
+<div><p>&amp;#xa987;<br>Ii</p>&#xa987;</div>
+<div><p>&amp;#xa988;<br>U</p>&#xa988;</div>
+<div><p>&amp;#xa989;<br>rê</p>&#xa989;</div>
+<div><p>&amp;#xa98a;<br>lê</p>&#xa98a;</div>
+<div><p>&amp;#xa98b;<br>lêu</p>&#xa98b;</div>
+<div><p>&amp;#xa98c;<br>E</p>&#xa98c;</div>
+<div><p>&amp;#xa98d;<br>Ai</p>&#xa98d;</div>
+<div><p>&amp;#xa98e;<br>O</p>&#xa98e;</div>
+<div><p>&amp;#xa98f;<br>ka</p>&#xa98f;</div>
+<div><p>&amp;#xa990;<br>qa<!--ka Sasak--></p>&#xa990;</div>
+<div><p>&amp;#xa991;<br>kha</p>&#xa991;</div>
+<div><p>&amp;#xa992;<br>ga</p>&#xa992;</div>
+<div><p>&amp;#xa993;<br>gha</p>&#xa993;</div>
+<div><p>&amp;#xa994;<br>nga</p>&#xa994;</div>
+<div><p>&amp;#xa995;<br>ca</p>&#xa995;</div>
+<div><p>&amp;#xa996;<br>cha</p>&#xa996;</div>
+<div><p>&amp;#xa997;<br>ja</p>&#xa997;</div>
+<div><p>&amp;#xa998;<br>jnya</p>&#xa998;</div>
+<div><p>&amp;#xa999;<br>jha</p>&#xa999;</div>
+<div><p>&amp;#xa99a;<br>nya</p>&#xa99a;</div>
+<div><p>&amp;#xa99b;<br>ṭa (tta)</p>&#xa99b;</div>
+<div><p>&amp;#xa99c;<br>ṭha (ttha)</p>&#xa99c;</div>
+<div><p>&amp;#xa99d;<br>ḍa (dda)</p>&#xa99d;</div>
+<div><p>&amp;#xa99e;<br>ḍha (ddha)</p>&#xa99e;</div>
+<div><p>&amp;#xa99f;<br>nha</p>&#xa99f;</div>
+<div><p>&amp;#xa9a0;<br>ta</p>&#xa9a0;</div>
+<div><p>&amp;#xa9a1;<br>tha</p>&#xa9a1;</div>
+<div><p>&amp;#xa9a2;<br>da</p>&#xa9a2;</div>
+<div><p>&amp;#xa9a3;<br>dha</p>&#xa9a3;</div>
+<div><p>&amp;#xa9a4;<br>na</p>&#xa9a4;</div>
+<div><p>&amp;#xa9a5;<br>pa</p>&#xa9a5;</div>
+<div><p>&amp;#xa9a6;<br>pha</p>&#xa9a6;</div>
+<div><p>&amp;#xa9a7;<br>ba</p>&#xa9a7;</div>
+<div><p>&amp;#xa9a8;<br>bha</p>&#xa9a8;</div>
+<div><p>&amp;#xa9a9;<br>ma</p>&#xa9a9;</div>
+<div><p>&amp;#xa9aa;<br>ya</p>&#xa9aa;</div>
+<div><p>&amp;#xa9ab;<br>ra</p>&#xa9ab;</div>
+<div><p>&amp;#xa9ac;<br>rha</p>&#xa9ac;</div>
+<div><p>&amp;#xa9ad;<br>la</p>&#xa9ad;</div>
+<div><p>&amp;#xa9ae;<br>wa</p>&#xa9ae;</div>
+<div><p>&amp;#xa9af;<br>sha</p>&#xa9af;</div>
+<div><p>&amp;#xa9b0;<br>ṣa (ssa)</p>&#xa9b0;</div>
+<div><p>&amp;#xa9b1;<br>sa</p>&#xa9b1;</div>
+<div><p>&amp;#xa9b2;<br>ha</p>&#xa9b2;</div>
+<div><p>&amp;#xa9b3;<br></p>&#xa9b3;</div>
+<div><p>&amp;#xa9b4;<br>aa</p>&#xa9b4;</div>
+<div><p>&amp;#xa9b5;<br>eu</p>&#xa9b5;</div>
+<div><p>&amp;#xa9b6;<br>i</p>&#xa9b6;</div>
+<div><p>&amp;#xa9b7;<br>ii</p>&#xa9b7;</div>
+<div><p>&amp;#xa9b8;<br>u</p>&#xa9b8;</div>
+<div><p>&amp;#xa9b9;<br>uu</p>&#xa9b9;</div>
+<div><p>&amp;#xa9ba;<br>e</p>&#xa9ba;</div>
+<div><p>&amp;#xa9bb;<br>ai</p>&#xa9bb;</div>
+<div><p>&amp;#xa9bc;<br>ě</p>&#xa9bc;</div>
+<div><p>&amp;#xa9bd;<br>-rě</p>&#xa9bd;</div>
+<div><p>&amp;#xa9be;<br>-ya</p>&#xa9be;</div>
+<div><p>&amp;#xa9bf;<br>-ra</p>&#xa9bf;</div>
+<div><p>&amp;#xa9c0;<br></p>&#xa9c0;</div>
+<div><p>&amp;#xa9c1;<br></p>&#xa9c1;</div>
+<div><p>&amp;#xa9c2;<br></p>&#xa9c2;</div>
+<div><p>&amp;#xa9c3;<br></p>&#xa9c3;</div>
+<div><p>&amp;#xa9c4;<br></p>&#xa9c4;</div>
+<div><p>&amp;#xa9c5;<br></p>&#xa9c5;</div>
+<div><p>&amp;#xa9c6;<br></p>&#xa9c6;</div>
+<div><p>&amp;#xa9c7;<br></p>&#xa9c7;</div>
+<div><p>&amp;#xa9c8;<br>,</p>&#xa9c8;</div>
+<div><p>&amp;#xa9c9;<br>.</p>&#xa9c9;</div>
+<div><p>&amp;#xa9ca;<br></p>&#xa9ca;</div>
+<div><p>&amp;#xa9cb;<br></p>&#xa9cb;</div>
+<div><p>&amp;#xa9cc;<br>(</p>&#xa9cc;</div>
+<div><p>&amp;#xa9cd;<br>)</p>&#xa9cd;</div>
+<div><p>&amp;#xa9ce;<br></p>&#xa9ce;</div>
+<div><p>&amp;#xa9cf;<br></p>&#xa9cf;</div>
+<div><p>&amp;#xa9d0;<br>0</p>&#xa9d0;</div>
+<div><p>&amp;#xa9d1;<br>1</p>&#xa9d1;</div>
+<div><p>&amp;#xa9d2;<br>2</p>&#xa9d2;</div>
+<div><p>&amp;#xa9d3;<br>3</p>&#xa9d3;</div>
+<div><p>&amp;#xa9d4;<br>4</p>&#xa9d4;</div>
+<div><p>&amp;#xa9d5;<br>5</p>&#xa9d5;</div>
+<div><p>&amp;#xa9d6;<br>6</p>&#xa9d6;</div>
+<div><p>&amp;#xa9d7;<br>7</p>&#xa9d7;</div>
+<div><p>&amp;#xa9d8;<br>8</p>&#xa9d8;</div>
+<div><p>&amp;#xa9d9;<br>9</p>&#xa9d9;</div>
+<div><p>&amp;#xa9da;<br></p>&#xa9da;</div>
+<div><p>&amp;#xa9db;<br></p>&#xa9db;</div>
+<div><p>&amp;#xa9dc;<br></p>&#xa9dc;</div>
+<div><p>&amp;#xa9dd;<br></p>&#xa9dd;</div>
+<div><p>&amp;#xa9de;<br></p>&#xa9de;</div>
+<div><p>&amp;#xa9df;<br></p>&#xa9df;</div>
+    </div>
+    </div>
+   </div>
+  </div>
+  <div id="resources">
+    <div class="section">
+     <div class="grid12 firstcol">
+      <h1><a href="#">Download</a></h1>
+      <p>Untuk download program "Nulisa Aksara Jawa" ini, Anda cukup menyimpan halaman ini (Ctrl-S) di komputer Anda, dan Anda dapat membukanya kembali di browser Anda untuk dapat langsung menulis Aksara Jawa.<!--<a href="https://github.com/bennylin/transliterasijawa/zipball/master">Download <strong>ZIP File</strong></a>--><br>Atau, Anda bisa download dari Dropbox dengan mengeklik di <a href="https://www.dropbox.com/s/z7r74yw0i1zcq4h/Nulisa_v1.1.zip">sini</a></p>
+      <p>Untuk download font Aksara Jawa "Tuladha Jejeg", silakan kunjungi <a href="https://sites.google.com/site/jawaunicode/download">situs R.S. Wihananto</a></p>
+      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="http://widyaksara.webnode.com/">situs Setya A.P.</a></p>
+      <hr />
+      <h2>Aplikasi Android</h2>
+    <div>Facebook groups: <a href="https://www.facebook.com/groups/366382146806594/">https://www.facebook.com/groups/366382146806594/</a></div>
+    <span style="float:right"><a href="https://play.google.com/store/apps/details?id=com.benny.jawa.aksara.keyboard"><img src="https://lh3.googleusercontent.com/ERsMxk9GHUlzWah5sLQF-b88P7P6MVT4gdAxk6EOgkEIdXdabRp2KEVdbWJ2ykN-sCDa" width="256px"></a></span>
+    <div class="id-app-orig-desc">
+    	<h3>Keyboard natural pertama untuk mengetik Aksara Jawa sesuai dengan urutan hanacaraka.</h3>
+    <p>Dikembangkan dengan AnySoftKeyboard, keyboard "Nulisa Aksara Jawa" saat ini memiliki 3 mode:</p>
+    <p>1. mode Nulisa Aksara Jawa: layout hanacaraka (20+ tombol - landscape mode, 4+ tombol - portrait mode)<br>2. mode qwerty Aksara Jawa: pemetaan huruf Latin menjadi aksara Jawa (on longpress)<br>3. mode standar: qwerty</p>
+    <p>Ponsel wajib memiliki dukungan font Aksara Jawa (tidak termasuk di aplikasi ini) untuk dapat menampilkan aksara-aksara Jawa.</p>
+    <p>-=*=-</p>
+    <p>Fitur longpress: tekan tombol selama lebih dari satu detik untuk mengakses huruf/aksara yang berhubungan. Apabila ada sejumlah karakter ketika di-longpress, Anda dapat menekan tombol yang sama sejumlah yang diperlukan untuk mendapatkan karakter yang diinginkan (mirip ponsel jaman dulu dengan tombol untuk angka "1" dan huruf "a","b"."c" pada tombol yang sama)</p>
+    <p>Mode standar qwerty (3): hanya mendukung Latin<br>* longpress huruf-huruf "qwertyuiop" untuk mendapatkan angka dari 1 hingga 0<br>* longpress tanda baca-tanda baca [?], [,], [.], dan ['] untuk mendapatkan tanda baca lainnya</p>
+    <p>Mode qwerty Aksara Jawa (2): dual-support Latin/Aksara<br>* longpress masing-masing huruf untuk mendapat aksara-aksara yang direpresentasikan oleh huruf Latin itu, mis: tekan "r" untuk memilih aksara "ra" dan aksara yang berhubungan, mis. "layar", "cakra", "keret", "cerek", dan "ra agung" (plus angka 4)<br>* pangkon terletak pada (longpress) huruf "q", seperti "Nulisa" versi web<br>* adeg-adeg terletak di tombol khusus di kanan huruf "L"<br>* murda terletak pada masing-masing huruf Latin yang berhubungan<br>* sandhangan/aksara swara terletak pada masing-masing huruf vokal Latin "aeiou". <br>* khusus longpress "e" berisi aksara "taling", "pepet", "E-kara", "Ai-kara", dan "dirga mure", selain itu juga ada huruf vokal Latin khusus yang digunakan di bahasa Jawa: è, é, dan ê, serta angka 3<br>* khusus longpress "o" berisi aksara "taling", "tarung", dan "O-kara". Untuk mengetik "ho", misalnya, tekan "h" sekali untuk menghasilkan "ha", "o" sekali untuk menghasilkan "taling", "o" dua kali untuk menghasilkan "tarung". (h jeda o jeda o-o)<br>* aksara "ha" terdapat di huruf "h" dan "a"<br>* aksara "nga", "nya", dan "cecak" terletak di huruf "n"<br>* huruf "f" mengandung "fa" dan "cecak telu", "v" mengandung "wa" dan "cecak telu", dan "z" mengandung "ja" dan "cecak telu"<br>* huruf "x" dipakai untuk "pepet", seperti "Nulisa" versi web.</p>
+    <p>Mode Nulisa Aksara Jawa - portrait mode (1b)<br>* baris 1: "hanacaraka", "datasawala"<br>* baris 2: "padajayanya", "magabathanga"<br>* baris 3: "aeiou", "spesial" (panduan klik: 1x = pangkon, 2=lingsa, 3=lungsi, 4=adeg-adeg)</p>
+    <p>Mode Nulisa Aksara Jawa - landscape mode (1a)<br>* baris 1: ha na ca ra ka da ta sa wa la<br>* baris 2: pa dha ja ya nya ma ga ba tha nga<br>* baris 3: adeg-adeg, a, e, i, ê, u, pada pangkat, lungsi, lingsa, pangkon</p>
+    <p>-=*=-</p>
+    <p>Fitur-fitur lainnya:<br>* usap keyboard ke kanan/kiri untuk mengganti layout keyboard secara cepat dengan; atau klik pada nama layout selanjutnya/sebelumnya di sebelah kanan atas keyboard.</p>
+    <p>Hanya layout 1a,2,3:<br>* longpress tombol spasi, lalu geser ke atas untuk mendapatkan fitur-fitur lainnya (model split keyboard, left-handed/right-handed keyboard) dan mengakses halaman pengaturan (simbol power on/off)<br>* navigasi huruf yang diketik dengan panah kiri dan panah kanan untuk membantu pengetikan di layar kecil, atau layar yang tidak sensitif, atau jari yang terlalu gendut :)<br>* klik "123!#()" untuk mengakses keyboard angka dan tanda baca, simbol-simbol, dan numpad</p>
+    <p>-=*=-</p>
+    <p>T: Mengapa aksara Jawanya tidak keluar ketika saya pencet suatu huruf maupun pada saat longpress?<br>J: Pastikan di ponsel Anda telah terpasang sebuah font aksara Jawa. Untuk panduan caranya, silakan cari di Google.</p>
+    <p>T: Font aksara Jawa sudah saya pasang, tapi mengapa ketika saya mengetik, pasangannya tidak terbentuk?<br>J: Fitur pasangan aksara Jawa masih belum didukung oleh sebagian besar aplikasi Android. Untuk situs web yang mendukung, coba <a target="_blank" href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://is.gd/nulisa%26sa%3DD%26usg%3DAFQjCNFxzFY4Qdt8X6s-YQiASSL4qft3Xw&amp;sa=D&amp;usg=AFQjCNFAdC9Q1Oqf7RXI16TEKHJ5T73hzA">http://is.gd/nulisa</a></p>
+    </div>
+    
+    
+    <div class="details-section screenshots">
+    <div class="details-section-contents">
+    <div class="details-section-body expandable">
+    <div class="expand-pages-container" style="left: 0%;">
+    <div class="expand-page" style="width: 100%; opacity: 1;">
+    <div class="thumbnails-wrapper" style="display: inline-block; visibility: visible;">
+    <div data-expand-target="thumbnails" class="thumbnails">
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/zqnkAkmbczlSeA6H0_THFUOcinDZ87AHJyDG9T3DrSyVALvr1xy1bUDBtyjN2WHZtyGY=h310" data-expand-to="full-screenshot-0" class="screenshot clickable">
+    		<figcaption>Mode hanacaraka</figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/uNG54-UQadqvbH68vfPcotCVs4wmNuU-Dqny7rWLykXSAY401hDVcVmZPwjc9n_VJu0=h310" data-expand-to="full-screenshot-1" class="screenshot clickable">
+    		<figcaption>Mode dual-input Latin-Aksara Jawa. Longpress untuk Aksara Jawa</figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/Pa3D3uhW42YjPw-LA4Ca7VptfZoszMjAF1MnNZ5-mG0WPEf6GzvqbSWtoswXXEZ1K2w=h310" data-expand-to="full-screenshot-2" class="screenshot clickable">
+    		<figcaption>Setting AnySoftKeyboard - an onscreen keyboard replacement - by Menny Even-Danan</figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/G8soNa_YgfVcAhPf-CsLBsVjimoCGuKskdX1WGmhDODhJ8URxrdjATT3q7E0romAb7M=h310" data-expand-to="full-screenshot-3" class="screenshot clickable">
+    		<figcaption>Langkah 1. Nyalakan AnySoftKeyboard</figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/bVrqbaKUwZwHcocHw-DM8knfYz-j6eOg62EnpdGsTnVN5v7uJXcjGt4NC1mEATFH0j4=h310" data-expand-to="full-screenshot-4" class="screenshot clickable">
+    		<figcaption>Beri tanda centang pada AnySoftKeyboard</figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/k_NIr95nDmRnzeHHHntPrHuLtBL7J1xytpN1591lXmUiLRGZGKzm4bAHfGYGlsZRJLY=h310" data-expand-to="full-screenshot-5" class="screenshot clickable">
+    		<figcaption>Langkah 2. Beralih ke metode input AnySoftKeyboard</figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/PL_8i2yaS7Kg68PrMpYBmb9d-1htCI38kZEa5VmTnUkYY2TLfBk7YBoSib2i-k2S66M=h310" data-expand-to="full-screenshot-6" class="screenshot clickable">
+    		<figcaption>Pilih AnySoftKeyboard </figcaption>
+    	</figure>
+    	<figure>
+    		<img tabindex="0" itemprop="screenshot" title=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " alt=" Keyboard Nulisa Aksara Jawa- gambar mini tangkapan layar  " src="https://lh3.googleusercontent.com/TaDruLUNxS8PreWOdI5Og_Zkjw34sfKoEEk82hhG56DoYEue5yzFkltQPizzePSSSyA=h310" data-expand-to="full-screenshot-7" class="screenshot clickable">
+    		<figcaption>Langkah 3. AnySoftKeyboard siap untuk digunakan</figcaption>
+    	</figure>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+     </div>
+    </div>
+  </div>
+  <div id="aksara">
+    <div class="section">
+     <div class="grid12 firstcol">
+      <h1><a href="#">Daftar Font Aksara Jawa</a></h1>
+      	<figure style="position: relative; width: 600px; height: 120px; overflow: hidden; border: 1px red solid;">
+		<img style="width: 600px; position: absolute; top: -100px;" src="http://media.sabda.org/alkitab_kuno/images/1854_gericke/pl/v1_0010.jpg" />
+		<figcaption>Gericke 1854</figcaption>
+	</figure>
+  	<p><a href="https://sites.google.com/site/jawaunicode">Tuladha Jejeg</a>: <span style="line-height:2em; font-size:16.0pt;font-family:Noto Sans Javanese, Tuladha Jejeg">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Tuladha Jejeg oleh R.S. Wihananto</figcaption>
+	</figure>
+<p>Aturra Unicode: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Aturra Unicode&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -108px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Aturra Unicode oleh Aditya Bayu</figcaption>
+	</figure>
+<p>Aturra web: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Aturra Unicode&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -166px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Aturra web oleh Aditya Bayu</figcaption>
+	</figure>
+<p>Bharatayuddha: <span style="line-height:2em; font-size:16.0pt;font-family:Bharatayuddha">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -224px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Bharatayuddha</figcaption>
+	</figure>
+<p>Candra Sangkala: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Candra Sangkala&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -282px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Candra Sangkala</figcaption>
+	</figure>
+<p>Chandrasa: <span style="line-height:2em; font-size:16.0pt;font-family:Chandrasa">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -340px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Chandrasa</figcaption>
+	</figure>
+<p>Nayaka: <span style="line-height:2em; font-size:16.0pt;font-family:NAYAKA">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -398px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Nayaka</figcaption>
+	</figure>
+<p>Tunjung Biru: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;TUNJUNG BIRU&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -456px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Tunjung Biru</figcaption>
+	</figure>
+<p>Tunjung Putih: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Tunjung putih&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -514px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Tunjung Putih</figcaption>
+	</figure>
+<p>Warasṭra: <span style="line-height:2em; font-size:16.0pt;font-family:Warasṭra">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -572px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Warasṭra</figcaption>
+	</figure>
+<p>YBG Bobotsari: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;YBG Bobotsari&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -630px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>YBG Bobotsari</figcaption>
+	</figure>
+<p>YBG Kramawirya: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;YBG Kramawirya&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -688px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>YBG Kramawirya</figcaption>
+	</figure>
+<p>Ngrawit: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Ngrawit web&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -738px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Ngrawit</figcaption>
+	</figure>
+<p>Javanese Text: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Javanese Text&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -800px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Javanese Text oleh Microsoft</figcaption>
+	</figure>
+<p>Prada Sunawa: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Prada Sunawa&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -856px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Prada Sunawa</figcaption>
+	</figure>
+<p>Pringgandani: <span style="line-height:2em; font-size:16.0pt;font-family:Pringgandani">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -912px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Pringgandani</figcaption>
+	</figure>
+<p>Guwa Wijaya: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Guwa Wijaya&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -980px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Guwa Wijaya</figcaption>
+	</figure>
+<p><abbr title="Namanya Aksara Bali, tapi tampilannya Aksara Jawa">Aksara Bali</abbr>: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Aksara Bali&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1038px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Aksara Bali (Jawa)</figcaption>
+	</figure>
+<h2>Aksara Jawa rasa Bali</h2>
+<p>Righma Çiddhi Bali: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Righma Çiddhi Bali&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1088px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Righma Çiddhi Bali</figcaption>
+	</figure>
+<h2>Aksara Jawa rasa Kawi</h2>
+<p>Mahisa: <span style="line-height:2em; font-size:16.0pt;font-family:Mahisa">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1146px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Mahisa</figcaption>
+	</figure>
+<p>Prayara: <span style="line-height:2em; font-size:16.0pt;font-family:Prayara">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1198px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Prayara</figcaption>
+	</figure>
+<p>Wijaya: <span style="line-height:2em; font-size:16.0pt;font-family:Wijaya">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1252px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Wijaya: <</figcaption>
+	</figure>
+<h2>Big Fail (jangan digunakan)</h2>
+<p>Carakan Anyar: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Carakan Anyar&quot;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1308px; left: -40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Carakan Anyar</figcaption>
+	</figure>
+<p>Noto Sans Javanese: <span style="line-height:2em; font-size:16.0pt;font-family:&quot;Noto Sans Javanese&quot;;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1364px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Noto Sans Javanese oleh Google</figcaption>
+	</figure>
+<p>Unifont: <span style="line-height:2em; font-size:16.0pt;font-family:Unifont;">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1420px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Unifont oleh Linux(?)</figcaption>
+	</figure>
+<p>Adjisaka: <span style="line-height:2em; font-size:16.0pt;font-family:Adjisaka">꧋ꦏꦭꦥꦸꦂꦮꦤ꧀ꦤꦺꦄꦭ꧀ꦭꦃꦲꦤ꧀ꦤꦶꦠꦃꦲꦏꦺꦭꦔꦶꦠ꧀ꦭꦤ꧀ꦧꦸꦩꦶ꧉&#8203;</span></p>
+	<figure style="position: relative; width: 600px; height: 60px; overflow: hidden; border: 1px red solid;">
+		<img style="position: absolute; top: -1480px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Perbandingan_Aksara_Jawa.png/800px-Perbandingan_Aksara_Jawa.png" />
+		<figcaption>Adjisaka</figcaption>
+	</figure>
+	<p>Perbandingan selengkapnya, <a href="https://jv.wikipedia.org/wiki/Panganggo:Bennylin/Perbandingan">buka di sini</a>.</p>
+     </div>
+    </div>
+  </div>
+  <div id="ansi">
+    <div class="section">
+     <div class="grid12 firstcol">
+      <h1><a href="#">Font Hanacaraka (ANSI)</a></h1>
+      <p>Font Hanacaraka adalah font lama yang digunakan untuk menulis aksara Jawa sebelum ada Unicode. Font ini saat ini dianggap tidak baku karena tidak sesuai standar Unicode.</p>
+      <p>Walaupun demikian, pada kenyataannya, font ini masih luas digunakan, karena beberapa faktor. Namun, kesulitan yang timbul adalah cara pengetikannya (di keyboard normal/standar).</p>
+      <p>Oleh sebab itu, halaman ini mencoba untuk memberikan pemetaan sederhana dari Hanacaraka (Latin) -> Unicode (Aksara Jawa) dan sebaliknya</p>
+      <ol style="font-family:Noto Sans Javanese, Tuladha Jejeg; line-height:2em;">Hanacaraka dasar
+<li>"ꦲ"  ->"a"</li>
+<li>"ꦤ"  ->"n"</li>
+<li>"ꦕ"  ->"c"</li>
+<li>"ꦫ"  ->"r"</li>
+<li>"ꦏ"  ->"k"</li>
+<li>"ꦢ"  ->"f"</li>
+<li>"ꦠ"  ->"t"</li>
+<li>"ꦱ"  ->"s"</li>
+<li>"ꦮ"  ->"w"</li>
+<li>"ꦭ"  ->"l"</li>
+<li>"ꦥ"  ->"p"</li>
+<li>"ꦝ"  ->"d"</li>
+<li>"ꦗ"  ->"j"</li>
+<li>"ꦪ"  ->"y"</li>
+<li>"ꦚ"  ->"v"</li>
+<li>"ꦩ"  ->"m"</li>
+<li>"ꦒ"  ->"g"</li>
+<li>"ꦧ"  ->"b"</li>
+<li>"ꦛ"  ->"q"</li>
+<li>"ꦔ"  ->"z"</li>
+<li>"ꦉ"  ->"x"</li>
+<li>"ꦊ"  ->"X"</li>
+</ol><ol style="font-family:Noto Sans Javanese, Tuladha Jejeg; line-height:2em;"> Pasangan
+<li>"꧀ꦲ" ->"H"</li>
+<li>"꧀ꦤ" ->"N"</li>
+<li>"꧀ꦕ" ->"C"</li>
+<li>"꧀ꦫ" ->"R"</li>
+<li>"꧀ꦏ" ->"K"</li>
+<li>"꧀ꦢ" ->"F"</li>
+<li>"꧀ꦠ" ->"T"</li>
+<li>"꧀ꦱ" ->"S"</li>
+<li>"꧀ꦮ" ->"W"</li>
+<li>"꧀ꦭ" ->"L"</li>
+<li>"꧀ꦥ" ->"P"</li>
+<li>"꧀ꦝ" ->"D"</li>
+<li>"꧀ꦗ" ->"J"</li>
+<li>"꧀ꦪ" ->"Y"</li>
+<li>"꧀ꦚ" ->"V"</li>
+<li>"꧀ꦩ" ->"M"</li>
+<li>"꧀ꦒ" ->"G"</li>
+<li>"꧀ꦧ" ->"B"</li>
+<li>"꧀ꦛ" ->"Q"</li>
+<li>"꧀ꦔ" ->"Z"</li>
+<li>"꧀ꦉ" ->"&gt;"</li>
+<li>"꧀ꦊ" ->"&lt;"</li>
+</ol><ol style="font-family:Noto Sans Javanese, Tuladha Jejeg; line-height:2em;"> Lain-lain
+<li>"ꦁ"  ->"="</li>
+<li>"ꦂ"  ->"/"</li>
+<li>"ꦃ"  ->"h"</li>
+<li>"ꦄ"  ->"A"</li>
+<li>"ꦆ"  ->"I"</li>
+<li>"ꦈ"  ->"U"</li>
+<li>"ꦌ"  ->"E"</li>
+<li>"ꦎ"  ->"O"</li>
+<li>"꦳"  ->"+"</li>
+<li>"ꦴ"  ->"o"</li>
+<li>"ꦶ"  ->"i"</li>
+<li>"ꦸ"  ->"u"</li>
+<li>"ꦺ"  ->"["</li>
+<li>"ꦻ"  ->"{"</li>
+<li>"ꦼ"  ->"e"</li>
+<li>"ꦽ"  ->"}"</li>
+<li>"ꦾ"  ->"-"</li>
+<li>"ꦿ"  ->"]"</li>
+<li>"꧀"  ->"\"</li>
+<li>"꧇"  ->";"</li>
+<li>"꧈"  ->","</li>
+<li>"꧉"  ->"."</li>
+<li>"꧋"  ->"?"</li>
+<li>"꧐"  ->"0"</li>
+<li>"꧑"  ->"1"</li>
+<li>"꧒"  ->"2"</li>
+<li>"꧓"  ->"3"</li>
+<li>"꧔"  ->"4"</li>
+<li>"꧕"  ->"5"</li>
+<li>"꧖"  ->"6"</li>
+<li>"꧗"  ->"7"</li>
+<li>"꧘"  ->"8"</li>
+<li>"꧙"  ->"9"</li>
+</ol><ol style="font-family:Noto Sans Javanese, Tuladha Jejeg; line-height:2em;">Urutan Abjad Latin
+<li>"&gt;"->"꧀ꦉ" </li>
+<li>"&lt;"->"꧀ꦊ" </li>
+<li>"+"->"꦳"  </li>
+<li>","->"꧈"  </li>
+<li>"-"->"ꦾ"  </li>
+<li>"."->"꧉"  </li>
+<li>"/"->"ꦂ"  </li>
+<li>"0"->"꧐"  </li>
+<li>"1"->"꧑"  </li>
+<li>"2"->"꧒"  </li>
+<li>"3"->"꧓"  </li>
+<li>"4"->"꧔"  </li>
+<li>"5"->"꧕"  </li>
+<li>"6"->"꧖"  </li>
+<li>"7"->"꧗"  </li>
+<li>"8"->"꧘"  </li>
+<li>"9"->"꧙"  </li>
+<li>";"->"꧇"  </li>
+<li>"="->"ꦁ"  </li>
+<li>"?"->"꧋"  </li>
+<li>"["->"ꦺ"  </li>
+<li>"\"->"꧀"  </li>
+<li>"]"->"ꦿ"  </li>
+<li>"A"->"ꦄ"  </li>
+<li>"a"->"ꦲ"  </li>
+<li>"b"->"ꦧ"  </li>
+<li>"B"->"꧀ꦧ" </li>
+<li>"c"->"ꦕ"  </li>
+<li>"C"->"꧀ꦕ" </li>
+<li>"d"->"ꦝ"  </li>
+<li>"D"->"꧀ꦝ" </li>
+<li>"E"->"ꦌ"  </li>
+<li>"e"->"ꦼ"  </li>
+<li>"f"->"ꦢ"  </li>
+<li>"F"->"꧀ꦢ" </li>
+<li>"g"->"ꦒ"  </li>
+<li>"G"->"꧀ꦒ" </li>
+<li>"h"->"ꦃ"  </li>
+<li>"H"->"꧀ꦲ" </li>
+<li>"I"->"ꦅ"  </li>
+<li>"I"->"ꦆ"  </li>
+<li>"I"->"ꦇ"  </li>
+<li>"i"->"ꦶ"  </li>
+<li>"j"->"ꦗ"  </li>
+<li>"J"->"꧀ꦗ" </li>
+<li>"k"->"ꦏ"  </li>
+<li>"K"->"꧀ꦏ" </li>
+<li>"l"->"ꦭ"  </li>
+<li>"L"->"꧀ꦭ" </li>
+<li>"m"->"ꦩ"  </li>
+<li>"M"->"꧀ꦩ" </li>
+<li>"n"->"ꦤ"  </li>
+<li>"N"->"꧀ꦤ" </li>
+<li>"O"->"ꦎ"  </li>
+<li>"o"->"ꦴ"  </li>
+<li>"p"->"ꦥ"  </li>
+<li>"P"->"꧀ꦥ" </li>
+<li>"q"->"ꦛ"  </li>
+<li>"Q"->"꧀ꦛ" </li>
+<li>"r"->"ꦫ"  </li>
+<li>"R"->"꧀ꦫ" </li>
+<li>"s"->"ꦱ"  </li>
+<li>"S"->"꧀ꦱ" </li>
+<li>"t"->"ꦠ"  </li>
+<li>"T"->"꧀ꦠ" </li>
+<li>"U"->"ꦈ"  </li>
+<li>"u"->"ꦸ"  </li>
+<li>"v"->"ꦚ"  </li>
+<li>"V"->"꧀ꦚ" </li>
+<li>"w"->"ꦮ"  </li>
+<li>"W"->"꧀ꦮ" </li>
+<li>"x"->"ꦉ"  </li>
+<li>"X"->"ꦊ"  </li>
+<li>"y"->"ꦪ"  </li>
+<li>"Y"->"꧀ꦪ" </li>
+<li>"z"->"ꦔ"  </li>
+<li>"Z"->"꧀ꦔ" </li>
+<li>"{"->"ꦻ"  </li>
+<li>"}"->"ꦽ"  </li>
+<ol>
+  </div>
+  </div>
+  </div>
+<div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-numposts="5" data-order-by="reverse_time" data-colorscheme="light"></div>
+ </div>
+ <div id="footer">
+  <p>&copy;<a href="lama.html">08-2015</a> v1.2 | <a href="http://facebook.com/bennylin.solo">Facebook</a> | <a href="http://twitter.com/bennylin">Twitter</a> | <a href="http://github.com/bennylin">Github</a></p>
+ </div>
+</div>
+</body>
+</html>

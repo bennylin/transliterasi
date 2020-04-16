@@ -1,0 +1,60 @@
+/*
+ * Noto Sans Balinese (Balinese) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans Balinese';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.ttf) format('truetype');
+}
+.main_ta
+{
+    font-family: 'Noto Sans Balinese';
+   width:100%;
+   height:250px;
+   text-align:left;
+   font-size:150%;
+}
+.tb
+{
+    font-family: 'Noto Sans Balinese';
+   width:100%;
+   font-size:150%;
+}
+.gb:hover
+{
+    border-color:#ccc;
+    background:#ccc;
+}
+.gb
+{
+    font-family: 'Noto Sans Balinese';
+    margin:10px;
+    border-style:solid;
+    border-width:10px;
+    border-color:#eeeeee;
+    background:#eeeeee;
+    filter:alpha(opacity=100);
+    opacity:1;
+}
+
+#prev_label
+{
+    font-family: 'Noto Sans Balinese';
+    color:dodgerblue;
+    font-size:150%;
+    line-height:3em;
+}
+.code
+{
+   background:black;
+   color:green;
+}
+abbr, acronym, .explain {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
