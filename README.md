@@ -1,18 +1,18 @@
 # transliterasi
 Pengembangan dari transliterasijawa repo, untuk aksara-aksara lainnya
-https://github.com/bennylin/transliterasijawa/tree/master
+https://github.com/bennylin/transliterasijawa/
 
 Javanese Transliteration
 ========================
-https://bennylin/github.io/transliterasijawa/
+https://bennylin.github.io/transliterasijawa/
 
 Balinese Transliteration
 ========================
-https://bennylin/github.io/transliterasijawa/bali.html
+https://bennylin.github.io/transliterasijawa/bali.html
 
 Buginese Transliteration
 ========================
-https://bennylin/github.io/transliterasi/bugis.html
+https://bennylin.github.io/transliterasi/bugis.html
 
 Pranala luar
 ------------
