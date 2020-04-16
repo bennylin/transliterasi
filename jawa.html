@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="jv-java" xml:lang="jv">
+<html xmlns="//www.w3.org/1999/xhtml" lang="jv-java" xml:lang="jv">
 <head>
  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
  <meta content="utf-8" http-equiv="encoding">
@@ -23,23 +23,8 @@
 </head>
 
   <body onload="document.getElementById('inp_txt').focus();">
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '788715451208485',
-      xfbml      : true,
-      version    : 'v2.2'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v6.0"></script>
 <div id="container">
  <div id="header">Nulisa Aksara Jawa</div>
  <div id="menu">
@@ -63,7 +48,7 @@
         <div id="prev_label"></div>
         <h3 style="font-family:Arial">Masukkan teks di sini, tekan Enter untuk memasukkan ke textbox utama. <abbr title="Dapat menerima input dalam bahasa Jawa maupun Indonesia"><span style="font-family:Arial; font-size:smaller">[?]</span></abbr></h3>
         <p>"Nulisa Aksara Jawa" adalah sebuah alat sederhana untuk mengetik aksara Jawa dengan keyboard biasa (QWERTY). Cukup ketikkan kata yang Anda inginkan, dan aksara Jawanya akan langsung muncul.</p>
-        <p><small>Catatan: "e" menghasilkan taling, "x" menghasilkan pepet. <a href="http://jv.wikipedia.org/wiki/Dhiskusi_Panganggo:Bennylin">Berikan masukan!</a></small></p>
+        <p><small>Catatan: "e" menghasilkan taling, "x" menghasilkan pepet. <a href="//jv.wikipedia.org/wiki/Dhiskusi_Panganggo:Bennylin">Berikan masukan!</a></small></p>
         <textarea id="inp_txt" class="tb"></textarea>
         <table width="100%" style="font-family:Arial"><tr><td style="width:50%">
           <input type="radio" name="mode" value="ketik" checked="checked">Mode Ketik: 'e' = taling, 'x' = pepet <abbr title="Dalam mode ini, Anda bisa mengetik secara normal. Tombol 'e' digunakan untuk menuliskan taling, sementara tombol 'x' digunakan untuk menuliskan pepet"><small>[?]</small></abbr><br>
@@ -97,7 +82,7 @@
 </p>
 
      <h2>2. Firefox</h2>
-     <p>Anda perlu menggunakan peramban web (browser) <a href="http://getfirefox.com/">Firefox</a> atau yang semacamnya, misalnya <a href="http://palemoon.org/">Palemoon</a>. Pastikan Anda menggunakan versi yang paling mutakhir (versi 11 ke atas). Karena alasan teknis, peramban Chrome, Internet Explorer (IE), Opera, Safari, dan peramban lain selain Firefox tidak dapat menampilkan aksara Jawa dengan benar. Kami mohon maaf atas ketidaknyamanan ini.
+     <p>Anda perlu menggunakan peramban web (browser) <a href="//getfirefox.com/">Firefox</a> atau yang semacamnya, misalnya <a href="//palemoon.org/">Palemoon</a>. Pastikan Anda menggunakan versi yang paling mutakhir (versi 11 ke atas). Karena alasan teknis, peramban Chrome, Internet Explorer (IE), Opera, Safari, dan peramban lain selain Firefox tidak dapat menampilkan aksara Jawa dengan benar. Kami mohon maaf atas ketidaknyamanan ini.
 </p>
 
      <h2>3. (PENTING) Fitur graphite</h2>
@@ -137,13 +122,13 @@ ha na ca ra ka &nbsp;&nbsp;&nbsp;da ta sa wa la &nbsp;&nbsp;&nbsp;pa dha ja ya n
 	     <p>* <a href="https://bennylin.github.io/transliterasi/bugis.html">Konversi Aksara Latin-Bugis</a> (Bugis Transliterator) v 0.1</p>
 	     <p>* Buat halaman khusus untuk <a href="https://bennylin.github.io/transliterasi/">daftar transliterator aksara Nusantara</a>, mengingat sudah ada Aksara Jawa, Bali, Bugis, dan Sunda (eksternal).</p>
       <p>2018-06:</p>
-	     <p>* <a href="http://www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</p>
+	     <p>* <a href="//www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</p>
 	     <p>* Bug: "kinclong" - terima kasih untuk Subarno Wijatmadja</p>
 	     <p>* Pertanyaan Umum (FAQ) ditambahkan</p>
       <p>2016-06:</p>
       <p>* Versi 1.3! Akhirnya ada waktu untuk memperbaiki beberapa hal yang sudah lama ingin diubah, misalnya huruf vokal yang berjejer (vokal rangkap), hampir semua kombinasi vokal (a-e-i-o-u-x-ai) rangkap dua sudah diakomodir. (Sangat membantu terutama dalam penulisan bahasa Indonesia)</p>
       <p>* Diftong 'ai' dan 'au' juga sudah diakomodir. Sekarang Anda dapat menulis kata-kata seperti: kau, menuai, membuai, sesuai, kiai, beliau, dll.</p>
-      <p><b><a href="http://bennylin.github.io/transliterasi/bali.html">Transliterator Aksara Bali</a> v 1.0</b> telah diluncurkan. Silakan dicoba!</p>
+      <p><b><a href="//bennylin.github.io/transliterasi/bali.html">Transliterator Aksara Bali</a> v 1.0</b> telah diluncurkan. Silakan dicoba!</p>
       <p>Seperti biasa, kalau Anda menemui kesalahan, sampaikan lewat kotak komentar atau halaman pembicaraan saya di Wikipedia, atau di mana pun Anda bisa menemukan saya :). Salam.</p>
       <p>&nbsp;</p><!--
       <p>2015-08:</p>
@@ -275,7 +260,7 @@ rwab</s></li></ol></p>-->
      </div>
     </div>
    </div>
-      <!--<div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-width="370" data-num-posts="10"></div>-->
+      <!--<div class="fb-comments" data-href="//bennylin.github.io/transliterasijawa/v1/" data-width="370" data-num-posts="10"></div>-->
     </div>
   </div>
    <div id="about">
@@ -283,7 +268,7 @@ rwab</s></li></ol></p>-->
      <div class="grid12 firstcol">
       <h1><a href="#">Javanese Transliterator</a></h1>
       <h2>Transliterasi Latin-Carakan, Carakan-Latin</h2>
-      <p class="byline">By <a href="http://jv.wikipedia.org/wiki/Panganggo:Bennylin">Bennylin</a></p>
+      <p class="byline">By <a href="//jv.wikipedia.org/wiki/Panganggo:Bennylin">Bennylin</a></p>
      </div>
     </div>
     <div class="section">
@@ -297,7 +282,7 @@ rwab</s></li></ol></p>-->
      </div>
      <div class="grid4 sidebar">
       <div class="box reverse">
-       <p class="last">Questions can be addressed to: <a href="http://facebook.com/jvwiki">Facebook</a>, <a href="http://twitter.com/jvwiki">Twitter</a>, or <a href="http://github.com/bennylin">contact me directly</a>.</p>
+       <p class="last">Questions can be addressed to: <a href="//facebook.com/jvwiki">Facebook</a>, <a href="//twitter.com/jvwiki">Twitter</a>, or <a href="//github.com/bennylin">contact me directly</a>.</p>
       </div>
       <p class="caption">Atau tinggalkan pesan di Facebook Comment.</p>
      </div>
@@ -415,7 +400,7 @@ rwab</s></li></ol></p>-->
       <h1><a href="#">Download</a></h1>
       <p>Untuk download program "Nulisa Aksara Jawa" ini, Anda cukup menyimpan halaman ini (Ctrl-S) di komputer Anda, dan Anda dapat membukanya kembali di browser Anda untuk dapat langsung menulis Aksara Jawa.<!--<a href="https://github.com/bennylin/transliterasijawa/zipball/master">Download <strong>ZIP File</strong></a>--><br>Atau, Anda bisa download dari Dropbox dengan mengeklik di <a href="https://www.dropbox.com/s/z7r74yw0i1zcq4h/Nulisa_v1.1.zip">sini</a></p>
       <p>Untuk download font Aksara Jawa "Tuladha Jejeg", silakan kunjungi <a href="https://sites.google.com/site/jawaunicode/download">situs R.S. Wihananto</a></p>
-      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="http://widyaksara.webnode.com/">situs Setya A.P.</a></p>
+      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="//widyaksara.webnode.com/">situs Setya A.P.</a></p>
       <hr />
       <h2>Aplikasi Android</h2>
     <div>Facebook groups: <a href="https://www.facebook.com/groups/366382146806594/">https://www.facebook.com/groups/366382146806594/</a></div>
@@ -436,7 +421,7 @@ rwab</s></li></ol></p>-->
     <p>Hanya layout 1a,2,3:<br>* longpress tombol spasi, lalu geser ke atas untuk mendapatkan fitur-fitur lainnya (model split keyboard, left-handed/right-handed keyboard) dan mengakses halaman pengaturan (simbol power on/off)<br>* navigasi huruf yang diketik dengan panah kiri dan panah kanan untuk membantu pengetikan di layar kecil, atau layar yang tidak sensitif, atau jari yang terlalu gendut :)<br>* klik "123!#()" untuk mengakses keyboard angka dan tanda baca, simbol-simbol, dan numpad</p>
     <p>-=*=-</p>
     <p>T: Mengapa aksara Jawanya tidak keluar ketika saya pencet suatu huruf maupun pada saat longpress?<br>J: Pastikan di ponsel Anda telah terpasang sebuah font aksara Jawa. Untuk panduan caranya, silakan cari di Google.</p>
-    <p>T: Font aksara Jawa sudah saya pasang, tapi mengapa ketika saya mengetik, pasangannya tidak terbentuk?<br>J: Fitur pasangan aksara Jawa masih belum didukung oleh sebagian besar aplikasi Android. Untuk situs web yang mendukung, coba <a target="_blank" href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://is.gd/nulisa%26sa%3DD%26usg%3DAFQjCNFxzFY4Qdt8X6s-YQiASSL4qft3Xw&amp;sa=D&amp;usg=AFQjCNFAdC9Q1Oqf7RXI16TEKHJ5T73hzA">http://is.gd/nulisa</a></p>
+    <p>T: Font aksara Jawa sudah saya pasang, tapi mengapa ketika saya mengetik, pasangannya tidak terbentuk?<br>J: Fitur pasangan aksara Jawa masih belum didukung oleh sebagian besar aplikasi Android. Untuk situs web yang mendukung, coba <a target="_blank" href="//is.gd/nulisa">https://is.gd/nulisa</a></p>
     </div>
     
     
@@ -808,7 +793,7 @@ rwab</s></li></ol></p>-->
 <div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-numposts="5" data-order-by="reverse_time" data-colorscheme="light"></div>
  </div>
  <div id="footer">
-  <p>&copy;<a href="lama.html">08-2015</a> v1.2 | <a href="http://facebook.com/bennylin.solo">Facebook</a> | <a href="http://twitter.com/bennylin">Twitter</a> | <a href="http://github.com/bennylin">Github</a></p>
+  <p>&copy;<a href="lama.html">08-2015</a> v1.2 | <a href="//facebook.com/bennylin.solo">Facebook</a> | <a href="//twitter.com/bennylin">Twitter</a> | <a href="//github.com/bennylin">Github</a></p>
  </div>
 </div>
 </body>
