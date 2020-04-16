@@ -27,6 +27,7 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v6.0"></script>
 <div id="container">
  <div id="header">Nulisa Aksara Jawa</div>
+ <div id="header">(Mohon maaf selama 6 bulan terakhir ada banyak orang yang tidak bisa memakai. Sekarang sudah saya perbaiki, harusnya sudah bekerja kembali dengan normal.)</div>
  <div id="menu">
  <ul class="tabs">
   <li><a href="#home">Home</a></li>
@@ -81,15 +82,15 @@
 	     <p>Microsoft Word-nya (Microsoft Office) yang belum mendukung. Saat ini program sejenis yang sudah mendukung baru Open Office dan Libre Office (alternatif gratis untuk MS Office).</p>
       <h2>Apa Yang Baru?</h2>
       <p>2020-04:</p>
-	     <p>* Memperbaiki https yang menyebabkan transliterator tidak bekerja. Terima kasih untuk laporannya, Pak Misdianto, Pak Rahmat, dan terima kasih untuk @andrreee yang membantu debugging.</p>
-	     <p>* Perbaikan Facebook comments supaya bisa tampil lagi.</p>
+	     <p>* Memperbaiki https yang menyebabkan transliterator tidak bekerja. Terima kasih untuk laporannya, Pak Misdianto, Pak Rahmat, dan terima kasih untuk @andrreee yang membantu debugging. Di tempat saya selama ini bekerja tanpa masalah, karena ternyata saya selalu mengakses situs ini pakai http ^_^".</p>
+	     <p>* Pembaruan kode Facebook comments.</p>
 	     <p>* Perbaikan <a href="https://bennylin.github.io/transliterasi/">https://bennylin.github.io/transliterasi</a>.</p>
-	     <p>* <a href="https://keyman.com/keyboards/indonesia">Keyboard Indonesia untuk Keyman</a> sudah publish. <a href="https://keyman.com/keyboards/indonesia">https://keyman.com/keyboards/indonesia</a></p>
+	     <p>* <a href="https://keyman.com/keyboards/indonesia">Keyboard Indonesia untuk Keyman</a> (versi 1) sudah publish. <a href="https://keyman.com/keyboards/indonesia">https://keyman.com/keyboards/indonesia</a></p>
 	     <p>* Situs <a href="https://bennylin.github.io/">https://bennylin.github.io</a> mulai saya buat.</p>
 	     
       <p>2020-02:</p>
 	     <span style="float:right"><img src="https://keyman.com/cdn/deploy/img/logo2.ba10b4af03869e69115ce84380e980aa.png"></span>
-	     <p>* <a href="https://keyman.com/keyboards/jawa">Nulisa untuk Keyman</a> sudah publish. <a href="https://keyman.com/keyboards/jawa">https://keyman.com/keyboards/jawa</a></p>
+	     <p>* <a href="https://keyman.com/keyboards/jawa">Nulisa untuk Keyman</a> (versi 1) sudah publish. <a href="https://keyman.com/keyboards/jawa">https://keyman.com/keyboards/jawa</a></p>
 
       <p>2020-01:</p>
 	     <p>* Perbaikan untuk '-yy-', mis. Duryyodhana.</p>
@@ -102,7 +103,7 @@
       <p>2018-06:</p>
 	     <p>* <a href="//www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</p>
 	     <p>* Bug: "kinclong" - terima kasih untuk Subarno Wijatmadja</p>
-	     <p>* Pertanyaan Umum (FAQ) ditambahkan</p>
+	     <p>* Pertanyaan Umum (FAQ) ditambahkan</p><!--
       <p>2016-06:</p>
       <p>* Versi 1.3! Akhirnya ada waktu untuk memperbaiki beberapa hal yang sudah lama ingin diubah, misalnya huruf vokal yang berjejer (vokal rangkap), hampir semua kombinasi vokal (a-e-i-o-u-x-ai) rangkap dua sudah diakomodir. (Sangat membantu terutama dalam penulisan bahasa Indonesia)</p>
       <p>* Diftong 'ai' dan 'au' juga sudah diakomodir. Sekarang Anda dapat menulis kata-kata seperti: kau, menuai, membuai, sesuai, kiai, beliau, dll.</p>
@@ -122,7 +123,7 @@
       <p>&nbsp;</p>
       <h3>Nulisa versi Android</h3>
       <p><s>"Nulisa" kini juga sedang dikembangkan untuk versi Android. Masih dalam tahap beta juga. Jika berminat menjadi tester, silakan hubungi saya.</s> Sudah dapat diunduh di <a href="https://play.google.com/store/apps/details?id=com.benny.jawa.aksara.keyboard">Play Store</a></p>
-      <p>&nbsp;</p><!--
+      <p>&nbsp;</p>
       <p>2015-04:</p>
       <p>* Known bug: (fixed 2015-05)</p>
       <p><ol>
@@ -213,32 +214,6 @@ panggrahita</s></li>
 rwa
 rwi
 rwab</s></li></ol></p>-->
-      <!--<h2>Troubleshooting<br />Font-Face Problems</h2>
-      <p>Having trouble getting your webfonts to load in your new website? Here are some tips to sort out what might be the problem.</p>
-
-      <h3>Fonts not showing in any browser</h3>
-
-      <p>This sounds like you need to work on the plumbing. You either did not upload the fonts to the correct directory, or you did not link the fonts properly in the CSS. If you've confirmed that all this is correct and you still have a problem, take a look at your .htaccess file and see if requests are getting intercepted.</p>
-
-      <h3>Fonts not loading in iPhone or iPad</h3>
-
-      <p>The most common problem here is that you are serving the fonts from an IIS server. IIS refuses to serve files that have unknown MIME types. If that is the case, you must set the MIME type for SVG to "image/svg+xml" in the server settings. Follow these instructions from Microsoft if you need help.</p>
-
-      <h3>Fonts not loading in Firefox</h3>
-
-      <p>The primary reason for this failure? You are still using a version Firefox older than 3.5. So upgrade already! If that isn't it, then you are very likely serving fonts from a different domain. Firefox requires that all font assets be served from the same domain. Lastly it is possible that you need to add WOFF to your list of MIME types (if you are serving via IIS.)</p>
-
-      <h3>Fonts not loading in IE</h3>
-
-      <p>Are you looking at Internet Explorer on an actual Windows machine or are you cheating by using a service like Adobe BrowserLab? Many of these screenshot services do not render @font-face for IE. Best to test it on a real machine.</p>
-
-      <h3>Fonts not loading in IE9</h3>
-
-      <p>IE9, like Firefox, requires that fonts be served from the same domain as the website. Make sure that is the case.</p>-->
-     </div>
-    </div>
-   </div>
-      <!--<div class="fb-comments" data-href="//bennylin.github.io/transliterasijawa/v1/" data-width="370" data-num-posts="10"></div>-->
     </div>
   </div>
    <div id="about">
@@ -768,6 +743,7 @@ rwab</s></li></ol></p>-->
   </div>
   </div>
   </div>
+<p>Kunjungi dan bergabung di grup Facebook: <a href="https://www.facebook.com/groups/366382146806594/">Nulisa Aksara Jawa</a></p>
 <div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-numposts="5" data-order-by="reverse_time" data-colorscheme="light"></div>
  </div>
  <div id="footer">
