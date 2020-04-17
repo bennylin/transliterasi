@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="//www.w3.org/1999/xhtml" lang="jv-java" xml:lang="jv">
 <head>
@@ -23,11 +22,25 @@
 </head>
 
   <body onload="document.getElementById('inp_txt').focus();">
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v6.0"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '788715451208485',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <div id="container">
  <div id="header">Nulisa Aksara Jawa</div>
- <div id="header">(Mohon maaf selama 6 bulan terakhir ada banyak orang yang tidak bisa memakai. Sekarang sudah saya perbaiki, harusnya sudah bekerja kembali dengan normal.)</div>
  <div id="menu">
  <ul class="tabs">
   <li><a href="#home">Home</a></li>
@@ -43,6 +56,7 @@
    <div id="home">
     <div id="bd" role="main">
       <h1>Cara termudah untuk menulis Aksara Jawa</h1>
+      <h2>(Mohon maaf selama 6 bulan terakhir ada banyak orang yang tidak bisa memakai. Sekarang sudah saya perbaiki, harusnya sudah bekerja kembali dengan normal.)</h2>
       <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
       <div id="transdiv" class="gb">
         <h3 style="font-family:Arial">Pratayang <abbr title="Teks yang Anda ketik/kopipas akan muncul pratayangnya di sini.">[?]</abbr></h3>
@@ -64,7 +78,7 @@
         <p>Karakter khusus: ḍ ḍh ṇ ṣ ṭ ṭh <span style="font-family:Noto Sans Javanese, Tuladha Jejeg;">꧁ ꧂ ꧃ ꧄ ꧅ ꧆ ꧊ ꧏ ꦎꦴꦀ (Om/Oṃ/ॐ)</span><br></p>
       </div>
       <div id="output" class="gb">
-        <p><strong>You can compose text here, for transliteration type in textbox above.</strong></h3>
+        <p><strong>You can compose text here, for transliteration type in textbox above.</strong>
         <form name="formText">
            <input type="reset" value="reset" />
          <textarea id="ta" class="main_ta" name="editSrc"></textarea>
@@ -75,15 +89,21 @@
    <div class="section">
     <div class="grid12 firstcol">
      <div class="box">
-      <h2>Pertanyaan Umum</h2>
-      <h4>Kok banyak pangkon dipakai di tengah kalimat?</h4>
+      <h2>Pertanyaan Umum</h2><hr />
+     <span style="float:right"><img width=100 src="http://fbs.admin.utah.edu/download/Pcard/FAQ.jpg"></span>
+      <h4>1. Kok banyak pangkon dipakai di tengah kalimat?</h4>
 	     <p>Supaya pangkon tidak muncul di tengah-tengah kalimat, klik opsi "Tanpa spasi"</p>
-      <h4>Kok tidak bisa dikopipas/diprint lewat Word?</h4>
+      <h4>2. Kok tidak bisa dikopipas/diprint lewat Word?</h4>
 	     <p>Microsoft Word-nya (Microsoft Office) yang belum mendukung. Saat ini program sejenis yang sudah mendukung baru Open Office dan Libre Office (alternatif gratis untuk MS Office).</p>
-      <h2>Apa Yang Baru?</h2>
+      <h4>3. Kok tulisan <...> ini hasilnya salah?</h4>
+	     <p>Silakan tinggalkan pesan, kata apa yang Anda ketik, dan apa yang tertampil, supaya saya bisa mengeceknya.</p>
+      <h4>3a. Kok tulisan "saiki", "taun" ini hasilnya pakai dirga mure?</h4>
+	     <p>Karena skripnya menandai sebagai diftong 'ai'. Supaya dirga mure tidak muncul, coba disisipi 'h', misalnya "sahiki", atau "tahun". Atau dipisahkan spasi "yaiku" > "ya iku", "saumpama" > "sa umpama". Silakan tinggalkan masukan, apakah ini cara yang terbaik, atau sebaiknya tidak usah pakai dirga mure (mengakomodir bahasa yang banyak diftongnya, seperti Indonesia).</p>
+
+      <h2>Apa Yang Baru?</h2><hr />
+     <span style="float:right"><img width=100 src="https://lifeboat.com/images/whats.new.png"></span>
       <p>2020-04:</p>
 	     <p>* Memperbaiki https yang menyebabkan transliterator tidak bekerja. Terima kasih untuk laporannya, Pak Misdianto, Pak Rahmat, dan terima kasih untuk @andrreee yang membantu debugging. Di tempat saya selama ini bekerja tanpa masalah, karena ternyata saya selalu mengakses situs ini pakai http ^_^".</p>
-	     <p>* Pembaruan kode Facebook comments.</p>
 	     <p>* Perbaikan <a href="https://bennylin.github.io/transliterasi/">https://bennylin.github.io/transliterasi</a>.</p>
 	     <p>* <a href="https://keyman.com/keyboards/indonesia">Keyboard Indonesia untuk Keyman</a> (versi 1) sudah publish. <a href="https://keyman.com/keyboards/indonesia">https://keyman.com/keyboards/indonesia</a></p>
 	     <p>* Situs <a href="https://bennylin.github.io/">https://bennylin.github.io</a> mulai saya buat.</p>
@@ -95,7 +115,8 @@
       <p>2020-01:</p>
 	     <p>* Perbaikan untuk '-yy-', mis. Duryyodhana.</p>
 	     <p>* Perbaikan untuk 'wr-', mis. Wredhatama.</p>
-	     <p>* Perbaikan untuk 'nggr-', 'nggw-', 'nggy-', 'ngw-', 'ngw-', 'ncl-', 'ncr-', .</p>
+	     <p>* Perbaikan untuk 'nggr-', 'nggw-', 'nggy-', 'ngw-', 'ngw-', 'ncl-', 'ncr-'.</p>
+	     <p>* Perbaikan untuk 'yaiku', terima kasih Aris Riyanto Wijaksono (FB Comments) dan yang lain-lain yang sudah memberitahu saya tentang masalah ini secara japri.</p>
 
       <p>2019-12:</p>
 	     <p>* <a href="https://bennylin.github.io/transliterasi/bugis.html">Konversi Aksara Latin-Bugis</a> (Bugis Transliterator) v 0.1</p>
@@ -103,13 +124,14 @@
       <p>2018-06:</p>
 	     <p>* <a href="//www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</p>
 	     <p>* Bug: "kinclong" - terima kasih untuk Subarno Wijatmadja</p>
-	     <p>* Pertanyaan Umum (FAQ) ditambahkan</p><!--
+	     <p>* Pertanyaan Umum (FAQ) ditambahkan</p>
+<!--
       <p>2016-06:</p>
       <p>* Versi 1.3! Akhirnya ada waktu untuk memperbaiki beberapa hal yang sudah lama ingin diubah, misalnya huruf vokal yang berjejer (vokal rangkap), hampir semua kombinasi vokal (a-e-i-o-u-x-ai) rangkap dua sudah diakomodir. (Sangat membantu terutama dalam penulisan bahasa Indonesia)</p>
       <p>* Diftong 'ai' dan 'au' juga sudah diakomodir. Sekarang Anda dapat menulis kata-kata seperti: kau, menuai, membuai, sesuai, kiai, beliau, dll.</p>
       <p><b><a href="//bennylin.github.io/transliterasi/bali.html">Transliterator Aksara Bali</a> v 1.0</b> telah diluncurkan. Silakan dicoba!</p>
       <p>Seperti biasa, kalau Anda menemui kesalahan, sampaikan lewat kotak komentar atau halaman pembicaraan saya di Wikipedia, atau di mana pun Anda bisa menemukan saya :). Salam.</p>
-      <p>&nbsp;</p><!--
+      <p>&nbsp;</p><
       <p>2015-08:</p>
         <section class="box feature">
 	  <img alt="Keyboard Nulisa" src="https://lh3.googleusercontent.com/ERsMxk9GHUlzWah5sLQF-b88P7P6MVT4gdAxk6EOgkEIdXdabRp2KEVdbWJ2ykN-sCDa=w250" style="display: block; margin-left: auto; margin-right: auto;" class="8u"><br>
@@ -215,6 +237,9 @@ rwa
 rwi
 rwab</s></li></ol></p>-->
     </div>
+  </div>
+  </div>
+  </div>
   </div>
    <div id="about">
     <div class="section">
@@ -353,10 +378,16 @@ rwab</s></li></ol></p>-->
       <h1><a href="#">Download</a></h1>
       <p>Untuk download program "Nulisa Aksara Jawa" ini, Anda cukup menyimpan halaman ini (Ctrl-S) di komputer Anda, dan Anda dapat membukanya kembali di browser Anda untuk dapat langsung menulis Aksara Jawa.<!--<a href="https://github.com/bennylin/transliterasijawa/zipball/master">Download <strong>ZIP File</strong></a>--><br>Atau, Anda bisa download dari Dropbox dengan mengeklik di <a href="https://www.dropbox.com/s/z7r74yw0i1zcq4h/Nulisa_v1.1.zip">sini</a></p>
       <p>Untuk download font Aksara Jawa "Tuladha Jejeg", silakan kunjungi <a href="https://sites.google.com/site/jawaunicode/download">situs R.S. Wihananto</a></p>
-      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="//widyaksara.webnode.com/">situs Setya A.P.</a></p>
+      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="https://bennylin.github.io/jawa-fonts.html">https://bennylin.github.io/jawa-fonts.html</a></p>
       <hr />
       <h2>Aplikasi Android</h2>
     <div>Facebook groups: <a href="https://www.facebook.com/groups/366382146806594/">https://www.facebook.com/groups/366382146806594/</a></div>
+
+	     <span style="float:right"><img src="https://keyman.com/cdn/deploy/img/logo2.ba10b4af03869e69115ce84380e980aa.png"></span>
+	     <p>Silakan kunjungi <a href="https://keyman.com/keyboards/jawa">Nulisa untuk Keyman</a> (versi 1). Di sana ada keyboard untuk komputer PC, Mac, Linux, untuk Android, untuk iOS, dan untuk web.</p>
+	     <p><a href="https://keyman.com/keyboards/jawa">-> https://keyman.com/keyboards/jawa</a></p>
+
+<!--
     <span style="float:right"><a href="https://play.google.com/store/apps/details?id=com.benny.jawa.aksara.keyboard"><img src="https://lh3.googleusercontent.com/ERsMxk9GHUlzWah5sLQF-b88P7P6MVT4gdAxk6EOgkEIdXdabRp2KEVdbWJ2ykN-sCDa" width="256px"></a></span>
     <div class="id-app-orig-desc">
     	<h3>Keyboard natural pertama untuk mengetik Aksara Jawa sesuai dengan urutan hanacaraka.</h3>
@@ -424,6 +455,7 @@ rwab</s></li></ol></p>-->
     </div>
     </div>
     </div>
+-->
      </div>
     </div>
   </div>
@@ -739,7 +771,7 @@ rwab</s></li></ol></p>-->
 <li>"Z"->"꧀ꦔ" </li>
 <li>"{"->"ꦻ"  </li>
 <li>"}"->"ꦽ"  </li>
-<ol>
+</ol>
   </div>
   </div>
   </div>
@@ -747,7 +779,7 @@ rwab</s></li></ol></p>-->
 <div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-numposts="5" data-order-by="reverse_time" data-colorscheme="light"></div>
  </div>
  <div id="footer">
-  <p>&copy;<a href="lama.html">08-2015</a> v1.2 | <a href="//facebook.com/bennylin.solo">Facebook</a> | <a href="//twitter.com/bennylin">Twitter</a> | <a href="//github.com/bennylin">Github</a></p>
+  <p>&copy;<a href="lama.html">08-2015</a> v1.2 | <a href="https://facebook.com/bennylin.solo">Facebook</a> | <a href="https://twitter.com/bennylin">Twitter</a> | <a href="https://github.com/bennylin">Github</a></p>
  </div>
 </div>
 </body>
