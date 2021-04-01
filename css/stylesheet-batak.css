@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Aksara Bugis';
-    src: local("ᨀᨁᨂ"), url('NotoSansBuginese.eot'), url('NotoSansBuginese.eot?#iefix') format('embedded-opentype'), url('NotoSansBuginese.woff') format('woff'), url('NotoSansBuginese.ttf') format('truetype');
+    font-family: 'Aksara Batak';
+    src: local("ᯅᯖᯂ᯳"), url('NotoSansBatak.eot'), url('NotoSansBatak.eot?#iefix') format('embedded-opentype'), url('NotoSansBatak.woff') format('woff'), url('NotoSansBatak.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .main_ta {
-    font-family: 'Noto Sans Buginese';
+    font-family: 'Noto Sans Batak';
     width: 100%;
     height: 250px;
     text-align: left;
@@ -14,7 +14,7 @@
 }
 
 .tb {
-    font-family: 'Noto Sans Buginese';
+    font-family: 'Noto Sans Batak';
     width: 100%;
     font-size: 150%;
 }
@@ -25,7 +25,7 @@
 }
 
 .gb {
-    font-family: 'Noto Sans Buginese';
+    font-family: 'Noto Sans Batak';
     margin: 10px;
     border-style: solid;
     border-width: 10px;
@@ -36,7 +36,7 @@
 }
 
 #prev_label {
-    font-family: 'Noto Sans Buginese';
+    font-family: 'Noto Sans Batak';
     color: dodgerblue;
     font-size: 150%;
     line-height: 3em;
