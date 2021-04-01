@@ -12,7 +12,6 @@
 */
 
 var toba2latn = {
-Annotations for letters indicate different usage among the various alphabets sharing the Batak script.
 "ᯀ":"a",
 "ᯂ":"ha",
 "ᯅ":"ba",
