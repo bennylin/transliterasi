@@ -62,17 +62,14 @@
                         <p>"Transliterasi Aksara Batak" adalah sebuah alat sederhana untuk mengetik aksara Batak dengan keyboard biasa (QWERTY). Cukup ketikkan kata yang Anda inginkan, dan aksara Bataknya akan langsung muncul.</p><!--
                         <p><small>Catatan: "e" menghasilkan taling, "x" menghasilkan pepet. <a href="https://github.com/bennylin/transliterasijawa/issues">Berikan masukan!</a></small></p>-->
                         <textarea id="inp_txt" class="tb"></textarea>
-                        <!--
                         <table width="100%" style="font-family:Arial"><tr><td style="width:50%">
-                          <input type="radio" name="mode" value="ketik" checked="checked">Mode Ketik: 'e' = taling, 'x' = pepet <abbr title="Dalam mode ini, Anda bisa mengetik secara normal. Tombol 'e' digunakan untuk menuliskan taling, sementara tombol 'x' digunakan untuk menuliskan pepet"><small>[?]</small></abbr><br>
-                          <input type="radio" name="mode" value="kopas">Mode Kopas: 'e' = pepet, 'è'/'é'  = taling <abbr title="Dalam mode ini, Anda bisa kopipas dari artikel yang menggunakan huruf 'e' beraksen (è/é), misalnya dari artikel Wikipedia bahasa Jawa"><small>[?]</small></abbr>
-                        </td><td style="width:25%">
-                          <input type="radio" name="murda" value="pakai">Mode Murda<br>
-                          <input type="radio" name="murda" value="tidak" checked="checked">Mode <s>Murda</s>
-                        </td><td style="width:25%">
-                          <input type="radio" name="spasi" value="without">Tanpa spasi <abbr title="Dalam mode ini, teks akan diperlakukan tanpa ada spasi sama sekali, meskipun Anda menggunakan spasi. Teks tidak dapat dikonvert kembali dengan spasi."><small>[?]</small></abbr><br>
-                          <input type="radio" name="spasi" value="with" checked="checked">Dengan spasi <abbr title="Dalam mode ini, setiap spasi diubah menjadi karakter khusus sehingga dapat ditransliterasi kembali ke Latin dengan spasi."><small>[?]</small></abbr>
-                        </td></tr></table>-->
+                          <input type="radio" name="bahasa" value="toba" checked="checked">Batak Toba<br />
+                          <input type="radio" name="bahasa" value="simalungun">Batak Simalungun<br />
+                          <input type="radio" name="bahasa" value="angkola-mandailing">Batak Angkola-Mandailing
+                        </td><td style="width:50%">
+                          <input type="radio" name="bahasa" value="karo">Batak Karo<br />
+                          <input type="radio" name="bahasa" value="pakpak-dairi">Batak Pakpak-Dairi
+                        </td></tr></table>
                     </div>
                     <div id="output" class="gb">
                         <h3>You can compose text here, for transliteration type in textbox above.</h3>
