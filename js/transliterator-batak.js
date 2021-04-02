@@ -59,6 +59,7 @@ var batak2latn = {
     "ᯭ": "o",
     "ᯨ": "o",
     "ᯮ": "u",
+    "ᯱ": "h",
     "ᯰ": "ng",
     "᯳": '​',
     "᯲": '​',
@@ -109,15 +110,11 @@ function transliterate(regexp_file) {
           trans = trans.ganti2(j, regexp_file[str[i]]);
         } else if (str[i] == "ᯠ" || str[i] == "ᯝ" || str[i] == "ᯢ" || str[i] == "ᯣ") {
             trans = trans.ganti(j, regexp_file[str[i]]);j+=3;//nya
-        } else if (str[i] == "ᯀ") {
-            trans = trans.ganti(j, regexp_file[str[i]]);j++;//a
+        } else if (str[i] == "ᯀ" || str[i] == "ᯰ") {
+            trans = trans.ganti(j, regexp_file[str[i]]);j++;//a, -h
         } else {
             trans = trans.ganti(j, regexp_file[str[i]]);j+=2;//ba, ca, da, dll.
-        } /*
-        } else {
-          trans = trans.ganti(j, regexp_file[str[i]]);j++;
-          //trans = trans.ganti(j, "@");j++;
-        }*/
+        }
 
       }
     }
