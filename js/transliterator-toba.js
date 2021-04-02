@@ -30,6 +30,7 @@ var toba2latn = {
     "ᯞ": "la",
     "ᯡ": "ca",
     "ᯠ": "nya",
+    "ᯝ": "nga",
     "ᯤ": "i",
     "ᯥ": "u",
     "ᯩ": "é",
@@ -88,7 +89,7 @@ function transliterate(regexp_file) {
             { trans = trans.ganti2(j, regexp_file[str[i]]); }
         } else if (str[i] == "᯲") {
           trans = trans.ganti2(j, regexp_file[str[i]]);
-        } else if (str[i] == "ᯠ") {
+        } else if (str[i] == "ᯠ" || str[i] == "ᯝ") {
             trans = trans.ganti(j, regexp_file[str[i]]);j+=3;//nya
         } else if (str[i] == "ᯀ") {
             trans = trans.ganti(j, regexp_file[str[i]]);j++;//a
