@@ -13,31 +13,54 @@
 
 var toba2latn = {
     "ᯀ": "a",
+    "ᯁ": "a",
+    "ᯃ": "ha",
+    "ᯄ": "ha",
     "ᯂ": "ka",
     "ᯅ": "ba",
+    "ᯆ": "ba",
     "ᯇ": "pa",
+    "ᯈ": "pa",
     "ᯉ": "na",
+    "ᯊ": "na",
     "ᯋ": "wa",
+    "ᯌ": "wa",
+    "ᯍ": "wa",
     "ᯎ": "ga",
+    "ᯏ": "ga",
     "ᯐ": "ja",
     "ᯑ": "da",
     "ᯒ": "ra",
+    "ᯓ": "ra",
     "ᯔ": "ma",
+    "ᯕ": "ma",
     "ᯖ": "ta",
     "ᯗ": "ta",
     "ᯘ": "sa",
+    "ᯙ": "sa",
+    "ᯚ": "sa",
     "ᯛ": "ya",
+    "ᯜ": "ya",
     "ᯞ": "la",
+    "ᯟ": "la",
     "ᯡ": "ca",
+    "ᯘ": "ca",
     "ᯠ": "nya",
     "ᯝ": "nga",
+    "ᯢ": "nda",
+    "ᯣ": "mba",
     "ᯤ": "i",
     "ᯥ": "u",
+    "ᯧ": "e",
     "ᯩ": "é",
     "ᯪ": "i",
+    "ᯫ": "i",
     "ᯬ": "o",
+    "ᯭ": "o",
+    "ᯨ": "o",
     "ᯮ": "u",
     "ᯰ": "ng",
+    "᯳": '​',
     "᯲": '​',
     "​": '#', //zero-width joiner
     "​": ' ' //zero-width space
@@ -87,9 +110,9 @@ function transliterate(regexp_file) {
           }
           else 
             { trans = trans.ganti2(j, regexp_file[str[i]]); }
-        } else if (str[i] == "᯲") {
+        } else if (str[i] == "᯲" || str[i] == "᯳") {
           trans = trans.ganti2(j, regexp_file[str[i]]);
-        } else if (str[i] == "ᯠ" || str[i] == "ᯝ") {
+        } else if (str[i] == "ᯠ" || str[i] == "ᯝ" || str[i] == "ᯢ" || str[i] == "ᯣ") {
             trans = trans.ganti(j, regexp_file[str[i]]);j+=3;//nya
         } else if (str[i] == "ᯀ") {
             trans = trans.ganti(j, regexp_file[str[i]]);j++;//a
