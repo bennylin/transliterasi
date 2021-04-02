@@ -1,6 +1,6 @@
 /*!
- * transliterator-toba.js (Toba-Latin / Toba Script to Latin)
- * https://bennylin.github.com/transliterasi/toba.html
+ * transliterator-batak.js (Toba-Latin / Toba Script to Latin)
+ * https://bennylin.github.com/transliterasi/batak.html
  *
  * Copyright 2021, Bennylin @bennylin
  * Released under the CC-BY-SA.
@@ -11,7 +11,7 @@
  *
  */
 
-var toba2latn = {
+var batak2latn = {
     "ᯀ": "a",
     "ᯁ": "a",
     "ᯃ": "ha",
@@ -65,11 +65,6 @@ var toba2latn = {
     "​": '#', //zero-width joiner
     "​": ' ' //zero-width space
 }
-var latn2toba = {
-
-    "#": '​', //zero-width joiner
-    " ": '​' //zero-width space
-}
 String.prototype.ganti = function(index, characterr) {
     return this.substr(0, index) + characterr; // + this.substr(index+character.length);
 }
@@ -98,7 +93,7 @@ function transliterate(regexp_file) {
     }
     var trans = str;
     for (var i = 0, j = 0; i < str.length; i++) {
-    	if (!regexp_file[str[i]]) { //not Toba
+    	if (!regexp_file[str[i]]) { //not Batak
         trans = trans.ganti(j, str[i]);j++;
       } else {
         if (i > 0 && (str[i] == "ᯩ" || str[i] == "ᯪ" || str[i] == "ᯬ" || str[i] == "ᯮ")) {
