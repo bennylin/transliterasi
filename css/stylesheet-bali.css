@@ -1,15 +1,12 @@
-/*
- * Noto Sans Balinese (Balinese) http://www.google.com/fonts/earlyaccess
- */
 @font-face {
-  font-family: 'Noto Sans Balinese';
-  font-style: normal;
-  font-weight: 400;
-  src: url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.eot);
-  src: url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/notosansbalinese/v1/NotoSansBalinese-Regular.ttf) format('truetype');
+    font-family: 'Noto Sans Balinese';
+    src: local("ᬳᬓ᭄ᬲᬭᬩᬮᬶ"),
+         url('NotoSansBalinese-Regular.eot'),
+         url('NotoSansBalinese-Regular.eot?#iefix') format('embedded-opentype'),
+         url('NotoSansBalinese-Regular.woff') format('woff'),
+         url('NotoSansBalinese-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 .main_ta
 {
