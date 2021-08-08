@@ -1,34 +1,19 @@
 /*!
-* transliterator.js (Jawa-Latin / Javanese Script to Latin)
-* https://bennylin.github.com/transliterasijawa
+* transliterator-jawa.js (Jawa-Latin / Javanese Script to Latin)
+* https://bennylin.github.com/transliterasi
 *
 * Copyright 2013, Bennylin @bennylin
-* Released under the CC-BY-SA.
+* Released under the CC-BY-SA 4.0.
 *
 * Date: 
 * 11 April 2013 - v 0.5
 * 25 Juli 2013 - v 0.6
 * 11 Februari 2021 - v 0.7
+* 9 Agustus 2021 - v 0.8
 *
 *
 */
 var java2latn = {
-"ꦀ":'',//? -- archaic
-"ꦁ":'ng',//cecak
-"ꦂ":'r',//layar
-"ꦃ":'h',//wignyan
-"ꦄ":'A',//swara-A
-"ꦅ":'I',//I-Kawi -- archaic
-"ꦆ":'I',//I
-"ꦇ":'Ii',//Ii -- archaic
-"ꦈ":'U',//U
-"ꦉ":'rê',//pa cêrêk
-"ꦊ":'lê',//nga lêlêt
-"ꦋ":'lêu',//nga lêlêt Raswadi -- archaic
-"ꦌ":'E',//E
-"ꦍ":'Ai',//Ai
-"ꦎ":'O',//O
-
 "ꦏ":'ka',
 "ꦐ":'qa',//Ka Sasak
 "ꦑ":'kʰa',//Murda
@@ -38,7 +23,7 @@ var java2latn = {
 "ꦕ":'ca',
 "ꦖ":'cʰa',//Murda
 "ꦗ":'ja',
-"ꦘ":'Nya',//Ja Sasak, Nya Murda
+"ꦘ":'jnya',//Ja Sasak, Nya Murda
 "ꦙ":'jʰa',//Ja Mahaprana
 "ꦚ":'nya',//ña 
 "ꦛ":'tha',//'ṭa',
@@ -58,7 +43,7 @@ var java2latn = {
 "ꦩ":'ma',
 "ꦪ":'ya',
 "ꦫ":'ra',
-"ꦬ":'Ra',//Ra Agung
+"ꦬ":'ṛa',//Ra Agung
 "ꦭ":'la',
 "ꦮ":'wa',
 "ꦯ":'śa',//Murda
@@ -66,7 +51,21 @@ var java2latn = {
 "ꦱ":'sa',
 "ꦲ":'ha',//could also be "a" or any sandhangan swara
 
-"꦳":'​',//cecak telu -- diganti zero-width joiner (tmp)
+"ꦁ":'ng',//cecak
+"ꦂ":'r',//layar
+"ꦃ":'h',//wignyan
+"ꦄ":'A',//swara-A
+"ꦅ":'I',//I-Kawi -- archaic
+"ꦆ":'I',//I
+"ꦇ":'Ii',//Ii -- archaic
+"ꦈ":'U',//U
+"ꦉ":'rê',//pa cêrêk
+"ꦊ":'lê',//nga lêlêt
+"ꦋ":'lêu',//nga lêlêt Raswadi -- archaic
+"ꦌ":'E',//E
+"ꦍ":'Ai',//Ai
+"ꦎ":'O',//O
+
 "ꦺꦴ":'o',//taling tarung
 "ꦴ":'a',
 "ꦶ":'i',
@@ -80,7 +79,10 @@ var java2latn = {
 "ꦾ":'ya',
 "ꦿ":'ra',
 
+"ꦀ":'',//? -- archaic
+"꦳":'​',//cecak telu -- diganti zero-width joiner (tmp)
 "꧀":'​',//pangkon -- diganti zero-width joiner (tmp)
+"꧇":'​',//titik dua -- diganti zero-width joiner (tmp)
 
 "꧁":'—',
 "꧂":'—',
@@ -88,7 +90,6 @@ var java2latn = {
 "꧄":'–',
 "꧅":'–',
 "꧆":'',
-"꧇":'​',//titik dua -- diganti zero-width joiner (tmp)
 "꧈":',',
 "꧉":'.',
 "꧊":'qqq',
@@ -109,17 +110,18 @@ var java2latn = {
 "꧞":'—',
 "꧟":'—',
 "​":'#',//zero-width joiner
-"​":' '//zero-width space
+"​":' ',//zero-width space
+" ":' '//regular space
 }
 
 String.prototype.ganti=function(index, character) {
-   return this.substr(0, index) + character;// + this.substr(index+character.length);
+   return this.substr(0, index) + character;
 }
 String.prototype.ganti2=function(index, character) {
-   return this.substr(0, index-1) + character;// + this.substr(index+character.length);
+   return this.substr(0, index-1) + character;
 }
 String.prototype.ganti3=function(index, character) {
-   return this.substr(0, index-2) + character;// + this.substr(index+character.length);
+   return this.substr(0, index-2) + character;
 }
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
@@ -145,21 +147,7 @@ function transliterate(regexp_file) {
     	if (!regexp_file[str[i]]) { //not Aksara Jawa
         trans = trans.ganti(j, str[i]);j++;
       } else {
-        /*if (str[i] == "ꦲ") { //ha
-          /*if ( i > 0 && (str[i-1] == "ꦼ" || str[i-1] == "ꦺ" || str[i-1] == "ꦶ" || str[i-1] == "ꦴ" || str[i-1] == "ꦸ" || str[i-1] == "ꦄ" || str[i-1] == "ꦌ" || str[i-1] == "ꦆ" || str[i-1] == "ꦎ" || str[i-1] == "ꦈ" || 
-          str[i-1] == "ꦿ" || str[i-1] == "ꦾ" || str[i-1] == "ꦽ") ) { 
-          	trans = trans.ganti(j, "h"+regexp_file[str[i]]);j+=2; 
-          }
-          if ( i > 0 && (str[i-1] == "꧊") ) { 
-          	trans = trans.ganti(j, "H"+regexp_file[str[i]]);j+=2; 
-          } else { 
-          	trans = trans.ganti(j, regexp_file[str[i]]);j++; 
-          //}
-        } else */if (i > 0 && str[i] == "ꦫ" && str[i-1] == "ꦂ") { //double rr
-          trans = trans.ganti(j, "a");j++;
-        } else if (i > 0 && str[i] == "ꦔ" && str[i-1] == "ꦁ") { //double ngng
-          trans = trans.ganti(j, "a");j++;
-        } else if (str[i] == "ꦴ" || str[i] == "ꦶ" || str[i] == "ꦸ" || str[i] == "ꦺ" || str[i] == "ꦼ") {
+        if (str[i] == "ꦴ" || str[i] == "ꦶ" || str[i] == "ꦸ" || str[i] == "ꦺ" || str[i] == "ꦼ") {
           if (i > 2 && str[i-1] == "ꦲ" && str[i-2] == "ꦲ") { //-hah-
             if (str[i] == "ꦴ") trans = trans.ganti3(j,"ā"); 
             else if (str[i] == "ꦶ") trans = trans.ganti3(j,"ai"); 
@@ -174,8 +162,6 @@ function transliterate(regexp_file) {
             else if (str[i] == "ꦸ") trans = trans.ganti2(j,"u");
             else if (str[i] == "ꦺ") trans = trans.ganti2(j,"e"); 
             else if (str[i] == "ꦼ") trans = trans.ganti2(j,"ě"); 
-//11-02            j--;
-            //str[i] == "ꦶ" || str[i] == "ꦸ" || str[i] == "ꦺ" || str[i] == "ꦼ"
           }
           else /**/if (i > 0 && str[i] == "ꦴ" && str[i-1] == "ꦺ") //-o //2 aksara -> 1 huruf
             { trans = trans.ganti2(j, "o"); }
@@ -199,14 +185,27 @@ function transliterate(regexp_file) {
           else if (i > 0 && str[i-1] == "ꦮ") { 
             if (i > 1 && str[i-2] == "꧊") { trans = trans.ganti3(j, "Va"); }
             else { trans = trans.ganti3(j, "va"); } }//catatan, "va" biasanya ditulis sama dengan "fa" (dengan pa+cecak telu), variannya adalah wa+cecak telu.
+          else if (i > 0 && str[i-1] == "ꦲ") { 
+            if (i > 1 && str[i-2] == "꧊") { trans = trans.ganti3(j, "Ḥa"); }
+            else { trans = trans.ganti3(j, "ḥa"); } }
+          else if (i > 0 && str[i-1] == "ꦏ") { 
+            if (i > 1 && str[i-2] == "꧊") { trans = trans.ganti3(j, "Kha"); j++; }
+            else { trans = trans.ganti3(j, "kha"); j++; } }
+          else if (i > 0 && str[i-1] == "ꦢ") { 
+            if (i > 1 && str[i-2] == "꧊") { trans = trans.ganti3(j, "Dza"); j++; }
+            else { trans = trans.ganti3(j, "dza"); j++; } }
+          else if (i > 0 && str[i-1] == "ꦱ") { 
+            if (i > 1 && str[i-2] == "꧊") { trans = trans.ganti3(j, "Sya"); j++; }
+            else { trans = trans.ganti3(j, "sya"); j++; } }
+          else if (i > 0 && str[i-1] == "ꦒ") { 
+            if (i > 1 && str[i-2] == "꧊") { trans = trans.ganti3(j, "Gha"); j++; }
+            else { trans = trans.ganti3(j, "gha"); j++; } }
+          else if (i > 0 && str[i-1] == "ꦔ") { 
+            trans = trans.ganti3(j, "'a"); }
           else { trans = trans.ganti2(j, regexp_file[str[i]]); }
         } else if (str[i] == "꧀") {
           trans = trans.ganti2(j, regexp_file[str[i]]);
-        } else if (i > 1 && str[i] == "ꦕ" &&  str[i-1] == "꧀" &&  str[i-2] == "ꦚ") { //nyj & nyc
-          trans = trans.ganti2(j-2, "nc");
-        } else if (i > 1 && str[i] == "ꦗ" &&  str[i-1] == "꧀" &&  str[i-2] == "ꦚ") { //nyj & nyc
-          trans = trans.ganti2(j-2, "nj");
-        } else if (str[i] == "ꦏ" || str[i] == "ꦐ" || str[i] == "ꦑ" || str[i] == "ꦒ" || str[i] == "ꦓ" || str[i] == "ꦕ" || str[i] == "ꦖ" || str[i] == "ꦗ" || str[i] == "ꦙ" || str[i] == "ꦟ" || str[i] == "ꦠ" || str[i] == "ꦡ" || str[i] == "ꦢ" || str[i] == "ꦣ" || str[i] == "ꦤ" || str[i] == "ꦥ" || str[i] == "ꦦ" || str[i] == "ꦧ" || str[i] == "ꦨ" || str[i] == "ꦩ" || str[i] == "ꦪ" || str[i] == "ꦫ" || str[i] == "ꦬ" || str[i] == "ꦭ" || str[i] == "ꦮ" || str[i] == "ꦯ" || str[i] == "ꦱ" || str[i] == "ꦉ" || str[i] == "ꦊ" || str[i] == "ꦁ" || str[i] == "ꦲ") {
+        } else if (str[i] == "ꦏ" || str[i] == "ꦐ" || str[i] == "ꦒ" || str[i] == "ꦕ" || str[i] == "ꦗ" || str[i] == "ꦟ" || str[i] == "ꦠ" || str[i] == "ꦡ" || str[i] == "ꦢ" || str[i] == "ꦣ" || str[i] == "ꦤ" || str[i] == "ꦥ" || str[i] == "ꦧ" || str[i] == "ꦩ" || str[i] == "ꦪ" || str[i] == "ꦫ" || str[i] == "ꦬ" || str[i] == "ꦭ" || str[i] == "ꦮ" || str[i] == "ꦯ" || str[i] == "ꦰ" || str[i] == "ꦱ" || str[i] == "ꦉ" || str[i] == "ꦊ" || str[i] == "ꦁ" || str[i] == "ꦲ" || str[i] == "ꦑ" || str[i] == "ꦓ" || str[i] == "ꦖ" || str[i] == "ꦙ" || str[i] == "ꦡ" || str[i] == "ꦣ" || str[i] == "ꦦ" || str[i] == "ꦨ") {
           if (i > 0 && str[i-1] == "꧊") {
             if (str[i] == "ꦐ") { trans = trans.ganti(j, "Qa");j+=2; }
             else if (str[i] == "ꦧ" || str[i] == "ꦨ") { trans = trans.ganti(j, "Ba");j+=2; }
@@ -237,32 +236,51 @@ function transliterate(regexp_file) {
             else if (str[i] == "ꦮ") { trans = trans.ganti(j, "Wa");j+=2; }
             else if (str[i] == "ꦪ") { trans = trans.ganti(j, "Ya");j+=2; }
             else { trans.ganti(j, regexp_file[str[i]]);j+=3; }
-          } else if (str[i] == "ꦑ" || str[i] == "ꦓ" || str[i] == "ꦖ" || str[i] == "ꦙ" || str[i] == "ꦡ" || str[i] == "ꦣ" || str[i] == "ꦦ" || str[i] == "ꦨ" || str[i] == "ꦯ") {//bha, cha, dha, dll.
-            trans = trans.ganti(j, regexp_file[str[i]]);j+=3;
-          } else if (str[i] == "ꦲ" && (i == 0 || [" ", "​", "꧀", "꦳", "ꦴ", "ꦶ", "ꦷ", "ꦸ", "ꦹ", "ꦺ", "ꦻ", "ꦼ", "ꦽ", "ꦾ", "ꦿ"].indexOf(str[i-1]) >= 0)) { //ha, preceeded by space or zws or open vowel
+          } else if (i > 0 && str[i] == "ꦲ" && str[i-1] == "ꦃ") { //double hh
+	          trans = trans.ganti(j, "a");j++;
+          } else if (i > 0 && str[i] == "ꦫ" && str[i-1] == "ꦂ") { //double rr
+	          trans = trans.ganti(j, "a");j++;
+	        } else if (i > 0 && str[i] == "ꦔ" && str[i-1] == "ꦁ") { //double ngng
+	          trans = trans.ganti(j, "a");j++;
+	        } else if (i > 1 && str[i] == "ꦕ" &&  str[i-1] == "꧀" &&  str[i-2] == "ꦚ") { //nyj & nyc
+	          trans = trans.ganti(j-3, "nca");
+	        } else if (i > 1 && str[i] == "ꦗ" &&  str[i-1] == "꧀" &&  str[i-2] == "ꦚ") { //nyj & nyc
+	          trans = trans.ganti(j-3, "nja");
+	        } else if (str[i] == "ꦲ" && (i == 0 || [" ", "​", "꧀", "꦳", "ꦴ", "ꦶ", "ꦷ", "ꦸ", "ꦹ", "ꦺ", "ꦻ", "ꦼ", "ꦽ", "ꦾ", "ꦿ"].indexOf(str[i-1]) >= 0)) { //ha, preceeded by space or zws or open vowel
           	trans = trans.ganti(j, "_a");j+=2; 
+          } else if (str[i] == "ꦑ" || str[i] == "ꦓ" || str[i] == "ꦖ" || str[i] == "ꦙ" || str[i] == "ꦡ" || str[i] == "ꦣ" || str[i] == "ꦦ" || str[i] == "ꦨ") { //bha, cha, dha, dll.
+            trans = trans.ganti(j, regexp_file[str[i]]);j+=3;
           } else {//ba, ca, da, dll.
-            trans = trans.ganti(j, regexp_file[str[i]]);j+=2; }
-        } else if (str[i] == "ꦰ") { //ṣa
-          trans = trans.ganti(j, regexp_file[str[i]]);j+=2;
-        } else if (str[i] == "ꦔ" || str[i] == "ꦘ" || str[i] == "ꦚ" || str[i] == "ꦛ" || str[i] == "ꦜ" || str[i] == "ꦝ" || str[i] == "ꦞ" || str[i] == "ꦋ") {
+            trans = trans.ganti(j, regexp_file[str[i]]);j+=2;
+          }
+        } else if (str[i] == "ꦔ" || str[i] == "ꦘ" || str[i] == "ꦚ" || str[i] == "ꦛ" || str[i] == "ꦜ" || str[i] == "ꦝ" || str[i] == "ꦞ" || str[i] == "ꦋ") {//nga, nya, tha, dha
           if (i > 0 && str[i-1] == "꧊") {
             if (str[i] == "ꦔ") { trans = trans.ganti(j, "Nga");j+=3; }
             else if (str[i] == "ꦚ" || str[i] == "ꦘ") { trans = trans.ganti(j, "Nya");j+=3; }
             else if (str[i] == "ꦛ" || str[i] == "ꦜ") { trans = trans.ganti(j, "Tha");j+=3; }
             else if (str[i] == "ꦝ" || str[i] == "ꦞ") { trans = trans.ganti(j, "Dha");j+=3; }
             else { trans.ganti(j, regexp_file[str[i]]);j+=3; }
+          } else if (i > 0 && str[i] == "ꦘ") {
+            trans = trans.ganti(j, regexp_file[str[i]]);j+=4;
           } else {
-            trans = trans.ganti(j, regexp_file[str[i]]);j+=3; }
-        /*} else if (str[i] == "꧈" || str[i] == "꧉") { // habis titik atau koma diberi spasi
-          trans = trans.ganti(j, regexp_file[str[i]]+" ");j+=2;*/
+            trans = trans.ganti(j, regexp_file[str[i]]);j+=3;
+          }
         } else if (str[i] == "꧊") { //penanda nama diri -- made up for Latin back-compat
           trans = trans.ganti(j, "");
         } else if (str[i] == " ") {
-          trans = trans.ganti(j, " ");j++;
+          if (i > 0 && str[i-1] == "꧀") { //pangkon diikuti regular space = koma
+          	trans = trans.ganti(j, ", ");j+=2;
+          } else {
+          	trans = trans.ganti(j, " ");j++;
+          }
+        } else if (str[i] == "꧈") {
+          if (i > 0 && str[i-1] == "꧀") { //pangkon diikuti pada lingsa = titik
+          	trans = trans.ganti(j, ".");j++;
+          } else {  //pada lingsa saja = koma
+          	trans = trans.ganti(j, ",");j++;
+          }
         } else {
           trans = trans.ganti(j, regexp_file[str[i]]);j++;
-          //trans = trans.ganti(j, "@");j++;
         }
 
       }
@@ -273,7 +291,6 @@ function transliterate(regexp_file) {
         window.document.formText.editSrc.value = trans;
       } else {
         range.text = trans;
-        //if (!window.opera) txt = txt.replace(/\r/g,'')
         if (range.moveStart) range.moveStart('character', - txt.length)
         range.select() 
       }
