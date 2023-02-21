@@ -18,6 +18,7 @@
    $('#container').easyTabs({defaultContent:1});
   });
  </script>
+ <!--
  <script src='https://s.keyman.com/kmw/engine/14.0.270/keymanweb.js'></script>
  <script src='https://s.keyman.com/kmw/engine/14.0.270/kmwuitoggle.js'></script>
  <script>
@@ -37,6 +38,7 @@
     }]
   });
  </script>
+ -->
 </head>
 
 <body onload="document.getElementById('inp_txt').focus();">
@@ -142,9 +144,17 @@
 
       <h2>Apa Yang Baru?</h2><hr />
      <span style="float:right"><img src="assets/whatsnew.png" width="100"></span>
+      <p>2023-02:</p>
+       <p>* Setelah 10 tahun saya mengembangkan sendiri transliterasi Jawa (dan kemudian transliterasi Bali, Bugis, Batak, dll.), akhirnya dunia internet Jawa dan Indonesia diramaikan oleh generasi baru pemrogram web yang mengembangkan transliterasi-transliterasi mereka sendiri (tidak asal comot kode). Berikut ini beberapa yang sudah saya temui. Jika ada yang belum masuk di daftar ini, silakan hubungi saya, akan saya cek dan masukkan.</p>
+       <p>** <a href="https://www.kompiwin.com/translate-aksara/jawa/">Transliterator Kompiwin</a>: bukan "translator"/"translasi", tapi "transliterasi". Translasi itu "penerjemahan bahasa A ke B", sedangkan ini transliterasi, bahasanya sama, aksaranya yang berubah. Dilengkapi dengan papan ketik virtual. Rilis 28 Mei 2020</p>
+       <p>** <a href="https://kongresaksarajawa.id/salinsaja/">Salin Saja</a>: buatan situs Kongres Aksara Jawa. Menggunakan kamus internal sebesar hampir 1 MB, yang otomatis mengubah kata-kata menjadi versi yang lebih "tepat", misalnya "malioboro" akan otomatis berubah menjadi "maliyabara", menurut situsnya "... sesuai ketentuan kedinasan di DIY." Rilis 08 September 2021</p>
+       <p>** <a href="https://www.autobild.co.id/p/aksara-jawa.html">Generator Huruf Aksara Jawa Online</a>: Oleh Alfa Autobild. Rilis 20 Juli 2022. Situsnya terlihat baru dan menarik, namun sayangnya kodenya mencomot dari Kompiwin.</p>
+       <p>** Beberapa masukan untuk ketiga transliterator di atas: suku kata vokal, masih menggunakan Aksara Swara, mungkin bisa diganti dengan "ha" + sandhangan swara, misalnya "yaiku", "aku" dll.. Namun selain itu, hasil ketiganya sudah sangat bagus, dan sudah saya tes dengan kombinasi yang aneh-aneh, ketiganya bisa mentransliterasi dengan cukup akurat. Perlu diacungi jempol.</p>
+       <p>** <a href="https://aksharamukha.appspot.com/input/Javanese">Aksaramukha: Transliterator yang paling menarik. Dikembangkan oleh orang India, <a href="http://www.virtualvinodh.com/">Vinodh Rajan Sampath</a>, sejak 19 November 2018. Tersedia di <a href="https://github.com/virtualvinodh/aksharamukha">github</a> (sumber terbuka, lisensi GNU GPL 3.0), dan tidak cuma mendukung <a href="https://aksharamukha.appspot.com/describe/Javanese">Aksara Jawa</a>, tapi juga aksara Bali, 5 aksara Batak, Bugis, Kawi, Makassar, Rejang, Sunda, dan juga memiliki <a href="https://aksharamukha.appspot.com/converter">Konverter</a> otomatis dari satu akasara ke aksara lainnya berbagai aksara Nusantara, India, dan Asia/dunia! Ada banyak sekali fitur-fitur situs ini, misalnya <a href="https://aksharamukha.appspot.com/script-matrix">Matriks 120 Skrip</a>, sehingga tidak dapat saya ringkas dalam satu paragraf ini. Kekurangannya adalah beliau tidak memahami aksara-aksara Nusantara dan masih banyak kesalahan di hasil Aksara Jawanya, jadi pengembangannya bersifat India-sentris, sebatas pengetahuan yang dia peroleh di internet. Saya jadi kembali ingin mewujudkan cita-cita saya untuk membuat transliterator dari aksara satu ke aksara lainnya (mis. Jawa-Bali). Hal yan menarik: " {} is used to stop conjuncts formation. bud{}dha : ꦧꦸꦢ꧀‌ꦣ :: lak{}shha : ꦭꦏ꧀‌ꦰ"</p>
+       <p>* Web Keyboard saya matikan dulu, input kembali seperti sediakala, Anda mengetik dengan huruf Latin.</p>
       <p>2021-08:</p>
-       <p>* Perbaikan beberapa bug di transliterasi Aksara Jawa ke Latin</h1>
-       <p>* Web Keyboard - Layout Aksara Jawa Standar KAJ 2021</h1>
+       <p>* Perbaikan beberapa bug di transliterasi Aksara Jawa ke Latin</p>
+       <p>* Web Keyboard - Layout Aksara Jawa Standar KAJ 2021</p>
        <p>** Cara penggunaan: Klik pada kotak teks di bawah ini, Anda dapat mengetik menggunakan keyboard Anda maupun mengeklik tombol keyboard di layar.</p>
        <p>** Layer default untuk aksara-aksara yang sering digunakan; layer Shift untuk aksara-aksara yang jarang digunakan.</p>
       <p>2021-02:</p>
@@ -184,11 +194,11 @@
       <p>2019-12:</p>
        <p>* <a href="https://bennylin.github.io/transliterasi/bugis.html">Konversi Aksara Latin-Bugis</a> (Bugis Transliterator) v 0.1</p>
        <p>* Buat halaman khusus untuk <a href="https://bennylin.github.io/transliterasi/">daftar transliterator aksara Nusantara</a>, mengingat sudah ada Aksara Jawa, Bali, Bugis, dan Sunda (eksternal).</p>
+<!--w
       <p>2018-06:</p>
-       <p>* <a href="https://www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</p>
+       <p>* <s><a href="https://www.surya-aji.org/hanacaraka/">Konversi Aksara Latin-Jawa</a> oleh Bondhan Rio</s></p>
        <p>* Bug: "kinclong" - terima kasih untuk Subarno Wijatmadja</p>
        <p>* Pertanyaan Umum (FAQ) ditambahkan</p>
-<!--
       <p>2016-06:</p>
       <p>* Versi 1.3! Akhirnya ada waktu untuk memperbaiki beberapa hal yang sudah lama ingin diubah, misalnya huruf vokal yang berjejer (vokal rangkap), hampir semua kombinasi vokal (a-e-i-o-u-x-ai) rangkap dua sudah diakomodir. (Sangat membantu terutama dalam penulisan bahasa Indonesia)</p>
       <p>* Diftong 'ai' dan 'au' juga sudah diakomodir. Sekarang Anda dapat menulis kata-kata seperti: kau, menuai, membuai, sesuai, kiai, beliau, dll.</p>
@@ -468,7 +478,7 @@ melihat aksara Jawa digunakan secara luas oleh masyarakat, dan terkhusus
       <h1><a href="#">Download</a></h1>
       <p>Untuk download program "Nulisa Aksara Jawa" ini, Anda cukup menyimpan halaman ini (Ctrl-S) di komputer Anda, dan Anda dapat membukanya kembali di browser Anda untuk dapat langsung menulis Aksara Jawa.<!--<a href="https://github.com/bennylin/transliterasijawa/zipball/master">Download <strong>ZIP File</strong></a>--><br />Atau, Anda bisa download dari Dropbox dengan mengeklik di <a href="https://www.dropbox.com/s/z7r74yw0i1zcq4h/Nulisa_v1.1.zip">sini</a></p>
       <p>Untuk download font Aksara Jawa "Tuladha Jejeg", silakan kunjungi <a href="https://sites.google.com/site/jawaunicode/download">situs R.S. Wihananto</a></p>
-      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="https://bennylin.github.io/jawa-fonts.html">https://bennylin.github.io/jawa-fonts.html</a></p>
+      <p>Untuk download font Aksara Jawa lainnya, silakan kunjungi <a href="https://bennylin.github.io/keyboards/jawa-fonts.html">https://bennylin.github.io/keyboards/jawa-fonts.html</a></p>
       <hr />
       <h2>Aplikasi Android</h2>
     <div>Facebook groups: <a href="https://www.facebook.com/groups/366382146806594/">https://www.facebook.com/groups/366382146806594/</a></div>
@@ -799,7 +809,7 @@ melihat aksara Jawa digunakan secara luas oleh masyarakat, dan terkhusus
 <div class="fb-comments" data-href="http://bennylin.github.io/transliterasijawa/v1/" data-numposts="5" data-order-by="reverse_time" data-colorscheme="light"></div>
  </div>
  <div id="footer">
-  <p>&copy;<a href="//bennylin.github.io/transliterasijawa/lama/">2013-2021</a> - <a href="https://jv.wikipedia.org/wiki/Astamiwa:Permalink/1551685">v1.2</a><br />Kontak<br />
+  <p>&copy;<a href="//bennylin.github.io/transliterasijawa/lama/">2013-2023</a> - <a href="https://jv.wikipedia.org/wiki/Astamiwa:Permalink/1551685">v1.2</a><br />Kontak<br />
    <a href="https://jv.wikipedia.org/w/index.php?title=Parembugan_Naraguna:Bennylin&action=edit&section=new">Wikipedia (utama, publik, tidak perlu daftar/login)</a> |
    <a href="https://t.me/bennylin">Telegram (utama, japri, harus punya akun Telegram)</a> | <br /><a href="https://facebook.com/bennylin.solo">Facebook (tidak pernah dibuka lagi)</a> | 
    <a href="https://twitter.com/bennylin">Twitter (jarang dibuka lagi)</a> | <br /><a href="https://github.com/bennylin">Github</a> (sekunder, publik) | <a href="https://jv.wikipedia.org/wiki/Mirunggan:Lay%C3%A8l_naraguna/Bennylin">Surel/imél</a> (sekunder, japri, jarang buka surel lagi, harus punya akun Wikipedia)</p>
