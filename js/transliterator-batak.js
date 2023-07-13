@@ -5,18 +5,19 @@
  * Copyright 2021, Bennylin @bennylin
  * Released under the CC-BY-SA.
  *
- * Date: 1 April 2021 - v 0.1
- *
+ * 1 April 2021 - v 0.1
+ * 14 Juli 2023 - v 0.2
  *
  *
  */
 
 var batak2latn = {
+    "᯦": '​',
     "ᯀ": "a",
     "ᯁ": "a",
     "ᯃ": "ha",
     "ᯄ": "ha",
-    "ᯂ": "ka",
+    "ᯂ": "ha",
     "ᯅ": "ba",
     "ᯆ": "ba",
     "ᯇ": "pa",
@@ -44,7 +45,6 @@ var batak2latn = {
     "ᯞ": "la",
     "ᯟ": "la",
     "ᯡ": "ca",
-    "ᯘ": "ca",
     "ᯠ": "nya",
     "ᯝ": "nga",
     "ᯢ": "nda",
@@ -106,11 +106,18 @@ function transliterate(regexp_file) {
           }
           else 
             { trans = trans.ganti2(j, regexp_file[str[i]]); }
+        } else if (i > 0 && (str[i] == "᯦")) { // tompi
+          if (str[i-1] == "ᯄ") { 
+            trans = trans.ganti3(j,"ka"); 
+          } else if (str[i-1] == "ᯚ") { 
+            trans = trans.ganti3(j,"ca"); 
+          } else 
+            { trans = trans.ganti2(j, regexp_file[str[i]]); }
         } else if (str[i] == "᯲" || str[i] == "᯳") {
           trans = trans.ganti2(j, regexp_file[str[i]]);
         } else if (str[i] == "ᯠ" || str[i] == "ᯝ" || str[i] == "ᯢ" || str[i] == "ᯣ") {
-            trans = trans.ganti(j, regexp_file[str[i]]);j+=3;//nya
-        } else if (str[i] == "ᯀ" || str[i] == "ᯰ") {
+            trans = trans.ganti(j, regexp_file[str[i]]);j+=3;//nya, nga, nda, mba
+        } else if (str[i] == "ᯀ" || str[i] == "ᯥ" || str[i] == "ᯤ" || str[i] == "ᯱ") {
             trans = trans.ganti(j, regexp_file[str[i]]);j++;//a, -h
         } else {
             trans = trans.ganti(j, regexp_file[str[i]]);j+=2;//ba, ca, da, dll.
